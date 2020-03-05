@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: red;
 }
 
 header h1 {
@@ -41,21 +42,21 @@ header nav #hamburger .toggle-nav:hover div {
   background-color: #c00;
 }
 
-header nav .toggler:checked ~ #hamburger {
+header nav .toggler:checked #hamburger {
   z-index: 2;
 }
 
-header nav .toggler:checked ~ .menu {
+header nav .toggler:checked .menu {
   visibility: visible;
 }
 
-header nav .toggler:checked ~ .menu div {
+header nav .toggler:checked .menu div {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 0.8;
 }
 
-header nav .toggler:checked ~ .menu div div {
+header nav .toggler:checked .menu div div {
   opacity: 1;
 }
 
@@ -172,6 +173,35 @@ header nav .social-media a {
 
 header nav .social-media a:hover {
   color: #c00;
+}
+
+main .space {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  color: #000;
+  background-color: #000;
+}
+
+main .showcase {
+  margin: 0 0 0 7px;
+  padding-bottom: 5px;
+  background-color: green;
+}
+
+main .showcase #about {
+  text-align: center;
+  color: red;
+  margin: 0 auto;
+}
+
+main .showcase .table {
+  margin: 0 auto;
+}
+
+main .showcase .table td {
+  text-align: left;
+  margin: 0;
 }
 
 main section#main-project {

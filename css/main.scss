@@ -6,6 +6,7 @@ $colours:( primary: #005DFF, accent: #FFF6B8, primary-light: lighten(#005DFF, 40
 body {
     margin: 0;
     padding: 0;
+    background-color:red;
 }
 $numSocialMediaLinks: 2;
 header {
@@ -45,10 +46,10 @@ header {
             }
         }
         .toggler:checked {
-            ~ #hamburger{
+            #hamburger{
                 z-index:2;
             }
-            ~.menu {
+            .menu {
                 visibility: visible;
                 div {
                     transform: scale(1);
@@ -144,6 +145,33 @@ header {
 }
 
 main {
+    
+    .space{
+        width: 75%;
+        margin: 0 auto;
+        padding: 0;
+        color: #000;
+        background-color:#000;
+    }
+    .showcase{
+        #about{
+            text-align: center;
+            color: red;
+            margin:0 auto;
+        }
+        margin: 0 0 0 7px;
+        padding-bottom: 5px;
+        background-color:green;
+        .table{
+            margin:0 auto;
+            td{
+                text-align: left;
+                margin:0;
+            }
+        }
+        
+    }
+    
     section#main-project {
         width: 70%;
         height: 50vh;
