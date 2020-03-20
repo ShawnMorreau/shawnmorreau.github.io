@@ -1,0 +1,57 @@
+.footer {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer a .reddit {
+  color: #FF5700;
+}
+
+.footer a .twitter {
+  color: #1da1f2;
+}
+
+.footer a .facebook {
+  color: #4267B2;
+}
+
+.footer a .linkedin {
+  color: #2867b2;
+}
+
+.footer a .reddit, .footer .twitter, .footer .facebook, .footer .linkedin, .footer .instagram {
+  opacity: 60%;
+  -moz-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+}
+
+.footer a :hover {
+  opacity: 100%;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+}
+
+.callToAction {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f2a;
+}
+/*# sourceMappingURL=Footer.css.map */
