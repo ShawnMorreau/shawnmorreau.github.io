@@ -3,3 +3,4 @@ CREATE TABLE post(
     title VARCHAR(150) NOT NULL,
     content VARCHAR NOT NULL
 );
+

@@ -23,6 +23,12 @@ public class HomeController {
     public void addUser(@RequestBody User user){
         userService.addUser(user);
     }
+    @RequestMapping
+    public String addUserGivenName(@RequestParam("name") String name){
+        userService.addUser(new User(UUID.randomUUID(), name));
+        System.out.println("holy batman line 29 home cont");
+        return "we did it biish";
+    }
     @GetMapping("/users")
     public List<User> getAllUsers(){
         return userService.getAllUsers();

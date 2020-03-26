@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface IPostRepo {
     List<Post> getAllPosts();
+    int addPost(Post post);
 }

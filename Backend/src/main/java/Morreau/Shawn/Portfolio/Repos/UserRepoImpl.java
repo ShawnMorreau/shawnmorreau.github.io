@@ -3,6 +3,8 @@ package Morreau.Shawn.Portfolio.Repos;
 import Morreau.Shawn.Portfolio.Models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -31,7 +33,10 @@ public class UserRepoImpl implements IUserRepo {
     }
     @Override
     public int addUser(UUID id, User user) {
-        DB.add(new User(id, user.getName()));
+//        DB.add(new User(id, user.getName()));
+        //final String sql = "INSERT INTO users(id,name) VALUES (:id,:name)";
+
+        //jdbcTemplate.execute(sql,id,user);
         return 1;
     }
 

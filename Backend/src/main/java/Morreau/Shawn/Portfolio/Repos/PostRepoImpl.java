@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("Posts")
+@Repository("posts")
 public class PostRepoImpl implements IPostRepo{
     private JdbcTemplate jdbcTemplate;
 
@@ -25,4 +25,13 @@ public class PostRepoImpl implements IPostRepo{
             return new Post(title,content);
         });
     }
+
+    @Override
+    public int addPost(Post post) {
+        String sql = "INSERT INTO post (title, content) VALUES(? ?)";
+        jdbcTemplate.update(sql);
+        System.out.println("post added");
+        return 0;
+    }
+
 }
