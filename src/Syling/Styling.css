@@ -1,9 +1,0 @@
-.main {
-  min-height: 80vh;
-  /* will cover the 100% of viewport */
-  overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-/*# sourceMappingURL=Styling.css.map */
