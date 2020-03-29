@@ -17,11 +17,11 @@ hr{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000;
 }
 
 @keyframes App-logo-spin {

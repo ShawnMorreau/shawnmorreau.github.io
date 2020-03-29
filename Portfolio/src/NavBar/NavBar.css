@@ -9,7 +9,7 @@
 #navBar #logo {
   display: -ms-grid;
   display: grid;
-  background-color: #f2a;
+  background-color: #f1730c;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -34,7 +34,7 @@
   margin: 2px;
   background-color: #111;
   text-decoration: none;
-  color: yellow;
+  color: #f1730c;
 }
 
 #navBar #links a:hover {
