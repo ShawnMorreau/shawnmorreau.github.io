@@ -1,9 +1,7 @@
 import React from "react";
 import {
-    HashRouter as Router, 
     Switch,
     Route,
-    Link    
 } from "react-router-dom";
 import Homepage from "../Homepage/Homepage.js";
 import About from "../About/About.js";
@@ -14,16 +12,16 @@ export default function Routing(){
             <div className="main">
                 <Switch>
                     <Route exact path="/">
-                        <Homepage/>
+                        component={Homepage}
                     </Route>
                     <Route path="/about">
-                        <About/>
+                        component={About}
                     </Route>
                     <Route path="/contact">
-                        <Homepage/>
+                        component={About}
                     </Route>
                     <Route path="/blog">
-                        <BlogContainer/>
+                        component={BlogContainer}
                     </Route>
                 </Switch>
             </div>
