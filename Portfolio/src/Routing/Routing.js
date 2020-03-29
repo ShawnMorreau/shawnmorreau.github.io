@@ -11,18 +11,10 @@ export default function Routing(){
     return(
             <div className="main">
                 <Switch>
-                    <Route exact path="/">
-                        component={Homepage}
-                    </Route>
-                    <Route path="/about">
-                        component={About}
-                    </Route>
-                    <Route path="/contact">
-                        component={About}
-                    </Route>
-                    <Route path="/blog">
-                        component={BlogContainer}
-                    </Route>
+                    <Route exact path="/" component={Homepage}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/contact" component={About}/>
+                    <Route path="/blog" component={BlogContainer}/>
                 </Switch>
             </div>
     );
