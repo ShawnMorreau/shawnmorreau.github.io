@@ -9,7 +9,7 @@ export default function Footer() {
                 rel="noopener noreferrer">
                 <i className="github fa-2x fa fa-github">
                 </i></a>
-            <span className="callToAction">For updates and news follow us on our social media! </span>
+            <span className="callToAction">What is good my G </span>
         </div>
     );
 }
