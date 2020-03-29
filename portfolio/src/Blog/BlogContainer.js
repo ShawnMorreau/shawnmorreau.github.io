@@ -1,6 +1,7 @@
 import React from "react";
 import Blog from "./Blog.js";
 import BlogAdmin from "./BlogAdmin.js";
+import "../Syling/Styling.css";
 
 export default class extends React.Component {
     state = {

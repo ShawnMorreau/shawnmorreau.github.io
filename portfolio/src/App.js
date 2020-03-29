@@ -3,12 +3,14 @@ import './App.css';
 import Homepage from "./Homepage/Homepage.js";
 import NavBar from "./NavBar/NavBar.js";
 import Footer from "./Footer/Footer.js";
+import Routing from "./Routing/Routing.js";
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Homepage/>
+      <hr/>
+      <Routing/>
       <Footer/>
     </div>
   );

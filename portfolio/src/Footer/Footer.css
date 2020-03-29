@@ -1,35 +1,42 @@
-.footer {
+#footer {
   width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  min-height: 5vh;
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
 
-.footer a {
+#footer a {
   text-decoration: none;
   margin-right: 20px;
 }
 
-.footer a .reddit {
+#footer a .reddit {
   color: #FF5700;
 }
 
-.footer a .twitter {
+#footer a .twitter {
   color: #1da1f2;
 }
 
-.footer a .facebook {
+#footer a .facebook {
   color: #4267B2;
 }
 
-.footer a .linkedin {
+#footer a .linkedin {
   color: #2867b2;
 }
 
-.footer a .reddit, .footer .twitter, .footer .facebook, .footer .linkedin, .footer .instagram {
+#footer .github {
+  vertical-align: middle;
+  color: #daa;
   opacity: 60%;
   -moz-opacity: 0.6;
   -webkit-opacity: 0.6;
@@ -38,7 +45,7 @@
   -webkit-transition: opacity .2s ease-in;
 }
 
-.footer a :hover {
+#footer .github:hover {
   opacity: 100%;
   -moz-opacity: 1;
   -webkit-opacity: 1;
@@ -53,5 +60,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: #f2a;
+  margin: auto auto;
 }
 /*# sourceMappingURL=Footer.css.map */

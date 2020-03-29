@@ -4,8 +4,7 @@ import BlogContainer from "../Blog/BlogContainer.js"
 export default function Homepage(){
     return(
         <div className="main">
-            <h1>Shawn Morreau</h1>
-            <BlogContainer/>
+            <h1>Welcome to the underground</h1>
         </div>
     );
 }

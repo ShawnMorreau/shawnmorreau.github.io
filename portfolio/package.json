@@ -9,18 +9,19 @@
     "font-awesome": "^4.7.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
-  "proxy":"http://localhost:8080",
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://ShawnMorreau.github.io/badgut",
+  "homepage": "https://ShawnMorreau.github.io/",
   "eslintConfig": {
     "extends": "react-app"
   },

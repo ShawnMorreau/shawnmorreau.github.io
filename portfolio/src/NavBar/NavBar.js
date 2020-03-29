@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import {Link} from "react-router-dom";
 export default function NavBar(){
     return(
         <div id="navBar">
@@ -7,9 +8,11 @@ export default function NavBar(){
                 <h2>Shawn Morreau</h2>
             </div>
             <div id="links">
-                <a href="">GitHub</a>
-                <a href="">About Me</a>
-                <a href="">Contact Me</a>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact Me</Link>
+                <Link to="/blog">Blog</Link>
+
             </div>
         </div>
     );
