@@ -1,0 +1,52 @@
+#navBar {
+  display: -ms-grid;
+  display: grid;
+  min-height: 5vh;
+  grid-auto-flow: column;
+}
+
+#navBar #logo {
+  display: -ms-grid;
+  display: grid;
+  background-color: #f1730c;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#navBar #logo h2 {
+  text-decoration: none;
+  color: yellow;
+}
+
+#navBar #logo a {
+  text-decoration: none;
+}
+
+#navBar #links {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  grid-gap: 1em;
+  font-size: 1.2em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#navBar #links a {
+  padding: 5px 8px;
+  margin: 2px;
+  background-color: #111;
+  text-decoration: none;
+  color: #f1730c;
+}
+
+#navBar #links a:hover {
+  -webkit-box-shadow: 0 0 15px 3px yellow;
+          box-shadow: 0 0 15px 3px yellow;
+}
+/*# sourceMappingURL=NavBar.css.map */
