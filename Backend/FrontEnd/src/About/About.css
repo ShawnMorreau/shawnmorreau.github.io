@@ -1,0 +1,32 @@
+#about {
+  position: relative;
+  top: 7vh;
+  padding-bottom: 7vh;
+  text-align: left;
+  height: 100%;
+  min-height: 50vh;
+  margin: 0 75px;
+}
+
+#about p {
+  overflow: visible;
+}
+
+#about img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 200px;
+  -o-object-position: 45% 20%;
+     object-position: 45% 20%;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 25px 10px 0 0px;
+}
+
+#about h2 {
+  color: red;
+  text-align: center;
+}
+/*# sourceMappingURL=About.css.map */

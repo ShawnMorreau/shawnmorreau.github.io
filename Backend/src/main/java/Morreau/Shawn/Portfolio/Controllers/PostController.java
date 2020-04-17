@@ -29,10 +29,10 @@ public class PostController {
         return posts;
     }
 
-    @RequestMapping("/posts")
-    public List<Post> getAllPosts() {
-        return postService.getAllPosts();
-    }
+//    @RequestMapping("/posts")
+//    public List<Post> getAllPosts() {
+//        return postService.getAllPosts();
+//    }
 
     @PostMapping("/add")
     public @ResponseBody ResponseEntity<String> addPost(@RequestBody Post post){

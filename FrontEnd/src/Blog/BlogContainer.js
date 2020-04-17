@@ -16,14 +16,15 @@ export default class extends React.Component {
         return this.state.posts[this.state.posts.length-1]
     }
     createNewPost=(postObject)=>{
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(postObject)
-        };
-        fetch('api/blog/add', requestOptions)
-            .then(response => response.json())
-            .then(data=>this.setState({posts:data}))
+        console.log(postObect);
+        // const requestOptions = {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(postObject)
+        // };
+        // fetch('api/blog/add', requestOptions)
+        //     .then(response => response.json())
+        //     .then(data=>this.setState({posts:data}))
                 // this.setState({posts:allPosts}));
     }
     deletePost=(post_id)=>{
@@ -37,6 +38,7 @@ export default class extends React.Component {
             .then(this.setState({posts:newState}))
     }
     render() {
+        if(this.state.posts.length > 0){
         const posts = this.state.posts.map((post,i) =>
                 <Blog
                     key={i}
@@ -45,10 +47,11 @@ export default class extends React.Component {
                     content={post.content}
                     deletePost={this.deletePost}
                 />
-            );
+            );}
         return (
             <>
                 {posts}
+                <p>You fucking slut</p>
                 <BlogAdmin
                     createNewPost={this.createNewPost}
                 />

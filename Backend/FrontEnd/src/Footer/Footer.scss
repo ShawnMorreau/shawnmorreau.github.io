@@ -1,9 +1,9 @@
 #footer{
+    // position: absolute;
+    // bottom:0;
+    margin-bottom:5px;
     width: 100%;
-    // display: inline-flex;
-    // justify-content: center;
-    min-height: 5vh;
-    background-color:rgb(241, 115, 12);
+    // height: 5vh;
     display:flex;
     flex-direction: column;
     -ms-flex-direction: column;
@@ -24,20 +24,19 @@
         color: #2867b2;
     } 
     .github{
-        vertical-align: middle;
-        color: #000;
+        color: #fff;
         opacity: 50%;
         -moz-opacity: 0.5;
         -webkit-opacity: 0.5;
         transition: opacity .4s ease-in;
         -moz-transition: opacity .4s ease-in;
-        -webkit-transition: opacity .4s ease-in; 
-        background-color:rgb(241, 115, 12);
+        -webkit-transition: opacity .4s ease-in;
     }
     .github:hover{
         opacity: 100%;
-        -moz-opacity: 1;
-        -webkit-opacity: 1;
+        // -moz-opacity: 100%;
+        // -webkit-opacity: 100%;
+        // color:red;
     }
 }
 .callToAction{

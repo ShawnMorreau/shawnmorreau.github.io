@@ -7,8 +7,7 @@ import Routing from "./Routing/Routing.js";
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <hr/>
+      <NavBar/> 
       <Routing/>
       <Footer/>
     </div>

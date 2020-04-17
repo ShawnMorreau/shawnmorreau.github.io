@@ -1,16 +1,22 @@
 #navBar{
+    position:absolute;
+    top:0;
+    z-index: 1;
+    width:100%;
+    height:0;
     display:grid;
-    min-height:5vh;
     grid-auto-flow: column;
     #logo{
         display:grid;
-        background-color:rgb(241, 115, 12);
+        opacity:1;
         justify-content: center;
         align-content: center;
+        background-color:rgba(1,1,1,0);
         
         h2{
             text-decoration: none;
             color:yellow;
+            opacity:1;
         }
         a{text-decoration: none;}
     }
@@ -21,16 +27,16 @@
         grid-gap: 1em;
         font-size: 1.2em;
         align-content:center;
-        
         a{
             padding: 5px 8px;
             margin: 2px;
-            background-color: #111;
             text-decoration: none;
             color: rgb(241, 115, 12);
         }
         a:hover{    
-            box-shadow: 0 0 15px 3px yellow;
+            text-shadow: 
+                    0 0 5px yellow,
+                    0 0 9px red;
         }
     }
 }

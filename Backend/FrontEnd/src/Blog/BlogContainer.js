@@ -16,15 +16,26 @@ export default class extends React.Component {
         return this.state.posts[this.state.posts.length-1]
     }
     createNewPost=(postObject)=>{
+        const posts = {
+            ...this.state.posts,
+            postObject
+        }
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(postObject)
         };
         fetch('api/blog/add', requestOptions)
-            .then(response => response.json())
-            .then(data=>this.setState({posts:data}))
-                // this.setState({posts:allPosts}));
+            .then(response=>{
+                 if(response.status !==200){
+                     console.log("there is a problem yukka");
+                     return;
+                 }
+                 console.log(response);
+         })
+            
+            .then(response => response)
+            // .then(data=>this.setState({posts:data}))
     }
     deletePost=(post_id)=>{
         const newState = this.state.posts.filter(x=>x.id !== post_id);
@@ -37,7 +48,7 @@ export default class extends React.Component {
             .then(this.setState({posts:newState}))
     }
     render() {
-        const posts = this.state.posts.map((post,i) =>
+        let posts = this.state.posts.map((post,i) =>
                 <Blog
                     key={i}
                     id={post.id}
