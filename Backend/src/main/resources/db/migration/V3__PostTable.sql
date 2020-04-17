@@ -1,6 +1,0 @@
-CREATE TABLE post(
-    id INTEGER NOT NULL PRIMARY KEY,
-    title VARCHAR(150) NOT NULL,
-    content VARCHAR NOT NULL
-);
-
