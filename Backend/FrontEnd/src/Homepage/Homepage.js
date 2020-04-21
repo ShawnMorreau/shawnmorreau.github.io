@@ -11,13 +11,12 @@ export default function Homepage() {
     return (
         <>
             {/* <div id="name">Shawn Morreau</div> */}
-            <img id="myImg"src={myImage} alt="image of Shawn"/>
+            <img id="myImg"src={myImage} alt=""/>
             <div id="homePageContent" className ="animate">
                 <h1>Welcome to the underground</h1>
                 <span className={classes.root}>
                     <Button><Link to="/about">Who Dat</Link></Button>
                     <Button><Link to="/about">My Skills</Link></Button>
-                    <Button><Link to="/about">Hmm</Link></Button>
                 </span>
             </div>
         </>

@@ -8,10 +8,6 @@
   margin: 0 75px;
 }
 
-#about p {
-  overflow: visible;
-}
-
 #about img {
   -o-object-fit: cover;
      object-fit: cover;

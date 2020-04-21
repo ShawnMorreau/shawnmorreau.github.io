@@ -1,0 +1,21 @@
+.cardContainer{
+    background-color:red;
+    border:1px solid white;
+    display:flex;
+    flex-wrap: wrap-reverse;
+
+    .card{
+        border:1px solid black;
+        min-width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        
+
+        .cardTitle{
+            text-shadow: 0 0 5px #ff0;
+            margin: 0 auto;
+        }
+    }
+}

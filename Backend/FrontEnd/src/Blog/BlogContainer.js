@@ -2,6 +2,8 @@ import React from "react";
 import Blog from "./Blog.js";
 import BlogAdmin from "./BlogAdmin.js";
 import "../Syling/Styling.css";
+import CardV1 from "../Card/CardV1/CardV1.js"
+
 
 export default class extends React.Component {
     state = {
@@ -11,15 +13,16 @@ export default class extends React.Component {
         fetch('/api/blog/')
             .then(res=>{return res.json()})
             .then(data=>this.setState({posts:data}));
+
     }
     getLastIndexOfPosts=()=>{
         return this.state.posts[this.state.posts.length-1]
     }
     createNewPost=(postObject)=>{
-        const posts = {
-            ...this.state.posts,
-            postObject
-        }
+        // const posts = {
+        //     ...this.state.posts,
+        //     postObject
+        // }
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -63,6 +66,7 @@ export default class extends React.Component {
                 <BlogAdmin
                     createNewPost={this.createNewPost}
                 />
+                <CardV1/>
             </>
         );
     }

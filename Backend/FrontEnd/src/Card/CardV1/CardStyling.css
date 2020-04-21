@@ -1,0 +1,26 @@
+.cardContainer {
+  background-color: red;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.cardContainer .card {
+  border: 1px solid black;
+  min-width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardContainer .card .cardTitle {
+  text-shadow: 0 0 5px #ff0;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=CardStyling.css.map */

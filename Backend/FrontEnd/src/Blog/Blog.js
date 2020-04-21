@@ -12,6 +12,9 @@ export default function Blog(props){
                 <p>{props.id}</p>
             </>
             <button onClick={deletePost}>X</button>
+
+
+            
         </div>
     );
 }
