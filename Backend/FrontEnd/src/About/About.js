@@ -1,27 +1,29 @@
 import React from "react";
 import "./About.css";
 import Image from "../images/me.jpg";
-import SkillsContainer from "../Skills/SkillsContainer.js";
 import CardV1 from "../Card/CardV1/CardV1.js";
 export default function About() {
     return (
+        <>
+        <div id="navBarSpacer"></div>
         <div id="about">
-            <img src={Image} alt="" />
+            <div className="spacer"></div>
+            <img src={Image} alt="" className="profilePic"/>
             <h2>How you doin, I see you.</h2>
             <p>Ma name is Shawn!!!</p>
-            
-            <p> Hello, it's me. Ya boi Yung G. I don't know what Imma put in here yet but as you all know
-                imma real one out here in these streets yuuuuhHello, it's me. Ya boi Yung G. I don't know what Imma put in here yet but as you all know
-                imma real one out here in these streets yuuuuhHello, it's me. Ya boi Yung G. I don't know what Imma put in here yet but as you all know
-                immere in these streets yuuuuhHello, it's me. Ya boi Yung G. I don't know what Imma put in here yet but as you all know
-                imma real one out here in these streets yuuuuhHello, it's me. Ya boi Yung G. I don't know what Imma put in here yet but as you all know
-                imma real one out here in these streets yuuuuhHello, it's me. Ya boi Yung G. I don't know what Imma put in here yet but as you all know
-                imma real one out here in these streets yuuuuh</p>
+            <p> Hola, mi llamo Shawn. Estoy muy fuego. Queiro trabajo por favor.
+                mi esposa llamas Jaymee.
+                I need to put a whole bunch of stuff in here but I also don't need to? 
+                Should I even have this paragraph here? Do I just put stuff like my resume?
+                people don't like to read stuff anyways? put info into a chart or something?
+                education, what I enjoy to do, ez?
+            </p>
+            <hr id="spacing"/>
            <div className="skillsCards">
-                {/* <SkillsContainer/> */}
                 <CardV1/>
                 
            </div>
         </div>
+        </>
     );
 }

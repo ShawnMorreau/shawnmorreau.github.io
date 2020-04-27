@@ -7,8 +7,9 @@ export default function SkillList(props){
         props.updateActive(active);
     }
 
-    const x = props.skills.map(x=>
+    const x = props.allProps.skills.map((x,i)=>
         <Typography 
+            key={i}
             className="skill" 
             variant="button" 
             component="p"

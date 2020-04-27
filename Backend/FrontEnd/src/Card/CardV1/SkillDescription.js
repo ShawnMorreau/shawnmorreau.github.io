@@ -7,7 +7,7 @@ export default function SkillDescription(props){
     return(
         <>
             <Typography className="content" variant="body1" component="p">
-                {props.content||"Click on a Skill"}
+                {props.content}
             </Typography>
         </>
     );

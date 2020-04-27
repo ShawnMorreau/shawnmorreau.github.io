@@ -8,11 +8,11 @@ export default function SkillContainerV1(props) {
             <h1 className="cardTitle">{props.title}</h1>
             <div className="skillContainer">
                 <SkillList
-                    skills={props.skills}
+                    allProps={props}
                     updateActive={props.updateActive}
                 />
                 <SkillDescription
-                    content={props.active.content}
+                    content={props.active.content || "Click me"}
                 />
             </div>
         </div>

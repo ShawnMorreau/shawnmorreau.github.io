@@ -66,7 +66,6 @@ export default class extends React.Component {
                 <BlogAdmin
                     createNewPost={this.createNewPost}
                 />
-                <CardV1/>
             </>
         );
     }
