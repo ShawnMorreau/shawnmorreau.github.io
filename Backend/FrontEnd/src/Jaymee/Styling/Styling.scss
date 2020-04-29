@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+#title {
+    color: red;
+    margin-top: 50px;
+}
+
+#heart {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    fill: blue;
+    stroke-width: 4px;
+    stroke: blue;
+    path {
+        fill: blue;
+        stroke-width: 2px;
+        stroke: blue;
+    }
+}
+
+.timer {
+    p {
+        color: blue;
+        font-size: 90px;
+    }
+    width: 100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cake {
+    margin: 0 25px;
+    img {
+        height: 400px;
+        width: 500px;
+    }
+}
+
+.page {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 40px;
+    left:40vw;
+    right:40vw;
+    opacity:0;
+    animation: show 1s forwards 26s;
+    transition: opacity 2s;
+    .bar {
+        background-color: red;
+        width: 300px;
+        .selection {
+            background-color:blue;
+            width:150px;
+            border: red 1px solid;
+            color:white;
+        }
+        .selection:hover{
+            background-color:purple;
+        }
+    }
+}
+
+#celebration {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: repeat; 
+    animation: backgroundAnim 25s;
+    transition: background 2s;
+    .messages {
+        height: inherit;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 0 0 15px;
+        padding: 0 0 30px 0;
+        opacity: 0; 
+        animation: message1 10s ease-in-out 15s;
+        h1 {
+            font-size: 80px;
+            text-align: left;
+            color: white;
+            margin: 0;
+            font-family: 'Dancing Script', 'cursive';
+        }
+    }
+    .message2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        right: 10vw;
+        left: 10vw;
+        opacity: 0; 
+        animation: message2 3s forwards 25s;
+        transition: opacity 3s;
+        
+        p {
+            color: white;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'sans-serif';
+            margin: 5px 25px;
+        }
+    }
+    .imageWheel {
+        position: absolute;
+        bottom: 10vh;
+        transition: opacity 2s;
+        padding: 0;
+        margin: 0;
+        .imageContainer {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            transform: translateX(100vw); 
+            animation: slide 30s linear infinite 26s,show 2s forwards 26s;
+            opacity: 0;
+            .jaymee {
+                width: 350px;
+                height: 250px
+            }
+        }
+    }
+}
+
+@keyframes backgroundAnim {
+    0% {
+        background: url("../imageGallery/fireworks1.gif") repeat fixed center;
+    }
+    25% {
+        background: url("../imageGallery/fireworks2.gif") repeat fixed center;
+    }
+    50% {
+        background: url("../imageGallery/fireworks3.gif") repeat fixed center;
+    }
+    100% {
+        background: url("../imageGallery/jaymee.jpg") no-repeat fixed center;
+    }
+}
+
+@keyframes message1 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 25%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes message2 {
+    from {}
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes slide {
+    from {}
+    to {
+        transform: translateX(-600vw);
+    }
+}
+
+@keyframes show {
+    from {}
+    to {
+        opacity: 1;
+    }
+}

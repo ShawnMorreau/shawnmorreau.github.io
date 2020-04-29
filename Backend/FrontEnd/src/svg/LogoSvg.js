@@ -1,9 +1,7 @@
-import React, { createRef } from "react";
+import React from "react";
 import "./LogoSvg.css";
 
 export default function LogoSvg() {
-  const svgPath = createRef();
-  console.log(svgPath);
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790.11017 481.15133">
     <defs/>

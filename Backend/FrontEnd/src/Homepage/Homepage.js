@@ -16,7 +16,7 @@ export default function Homepage() {
                 <h1>Welcome to the underground</h1>
                 <span className={classes.root}>
                     <Button><Link to="/about">Who Dat</Link></Button>
-                    <Button><Link to="/about">My Skills</Link></Button>
+                    <Button><Link to="/jaymee">My Skills</Link></Button>
                 </span>
             </div>
         </>

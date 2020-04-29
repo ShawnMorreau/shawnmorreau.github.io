@@ -2,8 +2,6 @@ import React from "react";
 import Blog from "./Blog.js";
 import BlogAdmin from "./BlogAdmin.js";
 import "../Syling/Styling.css";
-import CardV1 from "../Card/CardV1/CardV1.js"
-
 
 export default class extends React.Component {
     state = {
@@ -34,7 +32,6 @@ export default class extends React.Component {
                      console.log("there is a problem yukka");
                      return;
                  }
-                 console.log(response);
          })
             
             .then(response => response)

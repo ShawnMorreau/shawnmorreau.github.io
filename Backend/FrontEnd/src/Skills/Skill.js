@@ -73,8 +73,6 @@ export default function Skill(props) {
     const [tab,setTab] = React.useState();
 
     const handleClick=(e)=>{
-        console.log(e.target.innerText);
-        //trigger flip animation
 
     }
     return (
