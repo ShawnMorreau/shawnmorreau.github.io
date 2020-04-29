@@ -1,0 +1,62 @@
+#footer {
+  width: 100%;
+  min-height: 5vh;
+  background-color: #f1730c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer a .reddit {
+  color: #FF5700;
+}
+
+#footer a .twitter {
+  color: #1da1f2;
+}
+
+#footer a .facebook {
+  color: #4267B2;
+}
+
+#footer a .linkedin {
+  color: #2867b2;
+}
+
+#footer .github {
+  vertical-align: middle;
+  color: #000;
+  opacity: 50%;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  transition: opacity .4s ease-in;
+  -moz-transition: opacity .4s ease-in;
+  -webkit-transition: opacity .4s ease-in;
+  background-color: red;
+}
+
+#footer .github:hover {
+  opacity: 100%;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+}
+
+.callToAction {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+}
+/*# sourceMappingURL=Footer.css.map */
