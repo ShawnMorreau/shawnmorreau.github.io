@@ -6,7 +6,6 @@ import {
 import Homepage from "../Homepage/Homepage.js";
 import About from "../About/About.js";
 import BlogContainer from "../Blog/BlogContainer.js";
-import Jaymee from "../Jaymee/Jaymee.js";
 import "../Syling/Styling.css";
 export default function Routing(){
     return(
@@ -16,7 +15,6 @@ export default function Routing(){
                     <Route exact path="/about" component={About}/>
                     <Route exact path="/contact" component={About}/>
                     <Route exact path="/blog" component={BlogContainer}/>
-                    <Route exact path="/jaymee" component={Jaymee}/>
                 </Switch>
             </div>
     );

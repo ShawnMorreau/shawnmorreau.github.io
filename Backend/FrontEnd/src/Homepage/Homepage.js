@@ -13,10 +13,15 @@ export default function Homepage() {
             {/* <div id="name">Shawn Morreau</div> */}
             <img id="myImg"src={myImage} alt=""/>
             <div id="homePageContent" className ="animate">
-                <h1>Welcome to the underground</h1>
+                <h1>Welcome to my portfolio!</h1>
+                <p>I am looking to apply the skills I have learned to projects
+                    in order to build clean scalable projects that clients will love!
+                </p>
+                <p>To Learn more about me checkout my profile page</p>
+                <p>To view projects that I have created view my projects page</p>
                 <span className={classes.root}>
                     <Button><Link to="/about">Who Dat</Link></Button>
-                    <Button><Link to="/jaymee">My Skills</Link></Button>
+                    <Button><Link to="/contact">Contact Me</Link></Button>
                 </span>
             </div>
         </>
