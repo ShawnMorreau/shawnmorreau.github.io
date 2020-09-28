@@ -50,16 +50,20 @@
 
 .main #homePageContent h1 {
   margin: 0 0;
-  -webkit-text-stroke: 0.5px #888;
+  -webkit-text-stroke: 0.5px #61DAFB;
   color: black;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #caa;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #61DAFB;
   font-size: 2.1em;
   cursor: default;
 }
 
+.main #homePageContent #description {
+  color: #61DAFB;
+}
+
 .main #homePageContent a {
   text-decoration: none;
-  color: rgba(255, 0, 0, 0.5);
+  color: rgba(97, 218, 251, 0.5);
   font-size: 1.3em;
 }
 

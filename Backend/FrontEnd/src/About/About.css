@@ -74,4 +74,9 @@
   background-color: red;
   color: red;
 }
+
+.skills > * {
+  color: white;
+  width: 100vw;
+}
 /*# sourceMappingURL=About.css.map */

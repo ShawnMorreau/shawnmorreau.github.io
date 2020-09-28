@@ -1,0 +1,44 @@
+{ "skills": [
+    {"Front End":[
+        {
+            "title":"HTML",
+            "description":" ",
+            "level": 10,
+            "icon": "fab fa-html5"
+        },
+        {
+            "title":"CSS/SASS",
+            "description":" ",
+            "level": 10,
+            "icon": "fab fa-css3-alt"
+        },
+        {
+            "title":"JavaScript",
+            "description":" ",
+            "level": 10,
+            "icon": "fab fa-js"
+        },
+        {
+            "title":"jQuery",
+            "description":" ",
+            "level": 10
+        },
+        {
+            "title":"React",
+            "description":" ",
+            "level": 10,
+            "icon": "fab fa-react"
+        },
+        {
+            "title":"D3",
+            "description":" ",
+            "level": 10
+        }
+    ]},
+    {"Backend":[
+        {
+
+        }
+    ]}
+    
+]}
