@@ -1,0 +1,70 @@
+#navBar {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: no-wrap;
+      -ms-flex: no-wrap;
+          flex: no-wrap;
+  height: auto;
+  width: 100vw;
+  background-color: rgba(225, 0, 0, 0);
+  z-index: 1;
+}
+
+#navBar #logo {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#navBar #links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navBar #links a {
+  margin-right: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: #f1730c;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#navBar #links a:hover {
+  -webkit-box-shadow: 0 0 15px 3px yellow;
+          box-shadow: 0 0 15px 3px yellow;
+}
+
+@media only screen and (max-width: 900px) {
+  #navBar {
+    margin: 0;
+    padding: 0;
+  }
+  #navBar #links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #navBar {
+    margin: 0;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */

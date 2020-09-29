@@ -1,0 +1,121 @@
+.projectsContainer {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.projectsContainer > #title {
+  color: #fff;
+  text-orientation: upright;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 20px;
+  top: 25vh;
+  bottom: 25vh;
+}
+
+.projectsContainer .activeProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70vw;
+  margin: 0 auto;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.projectsContainer .activeProject .prev {
+  height: 0;
+  width: 0;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 30px solid red;
+  position: absolute;
+  top: 25vh;
+  right: 70vw;
+}
+
+.projectsContainer .activeProject .next {
+  height: 0;
+  width: 0;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 30px solid red;
+  position: absolute;
+  top: 25vh;
+  left: 70vw;
+}
+
+.projectsContainer .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: green;
+  width: 70vw;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.projectsContainer .project > #title {
+  z-index: 1;
+  display: block;
+  position: relative;
+  background-color: #f1f;
+  width: 35vw;
+  height: 3rem;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  grid-area: title;
+  font-size: 1rem;
+}
+
+.projectsContainer .project > #title:before {
+  content: "";
+  width: 35vw;
+  height: 3rem;
+  position: absolute;
+  z-index: -1;
+  background-color: cyan;
+  left: 5px;
+  top: 5px;
+}
+
+.projectsContainer .project > #info {
+  height: 80%;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectsContainer .project > #info > #skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: red;
+}
+
+.projectsContainer .project > #info > #skills > .skill {
+  margin-right: 10px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=Projects.css.map */
