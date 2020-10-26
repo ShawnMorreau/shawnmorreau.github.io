@@ -1,0 +1,78 @@
+.home:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.home {
+  background-image: url("../../images/background.jpg");
+  background-size: 80vw 80vh;
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  bottom: 10vh;
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+
+.home #name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  width: 80vw;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 5px #00c2cb;
+  margin: 0 auto;
+  font-size: 4em;
+  word-spacing: 2em;
+}
+
+.home .role {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.home .role .line {
+  position: relative;
+  z-index: 1;
+}
+
+.home .role .line:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.home .role .blink {
+  -webkit-animation: blink 2s linear 1s infinite normal;
+          animation: blink 2s linear 1s infinite normal;
+}
+
+@-webkit-keyframes blink {
+  from {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  to {
+    color: transparent;
+  }
+}
+
+@keyframes blink {
+  from {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  to {
+    color: transparent;
+  }
+}
+/*# sourceMappingURL=home.css.map */

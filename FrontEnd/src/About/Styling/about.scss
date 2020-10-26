@@ -1,0 +1,56 @@
+$black-text: #0f0e0c;
+$white-background: #f1f1f1;
+$blue-logo-color: #00c2cb;
+#about {
+  margin: 0 3em;
+  display:flex;
+  padding-bottom: 10vh;
+
+  & > #details {
+    width: 50vw;
+    text-align: left;
+    & > #title {
+      color: $white-background;
+      font-size: 2em;
+      text-shadow: 2px 2px rgba(241, 241, 241, 0.3);
+      margin-bottom: 0.5em;
+    }
+    & > #desc {
+      display: flex;
+      color: $white-background;
+      & > #laptop {
+          align-self: center;
+          font-size: 4em;
+          margin-right: 0.75em;
+      }
+    }
+    &>#selfLearning{
+        margin-top: 1em;
+        display:flex;
+        color:$white-background;
+        text-align: start;
+
+        &>#code{
+            font-size: 5em;
+            align-self: center;
+            margin-left: 0.75em;
+            
+        }
+    }
+  }
+  &>#images{
+    width: 60vw;
+    margin:auto 0;
+    &>#background{
+      // max-width:50vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right:0;
+      background-repeat: no-repeat;
+      padding:10vh;
+      object-fit: contain;      
+      background-color:red;
+    }
+  }
+}

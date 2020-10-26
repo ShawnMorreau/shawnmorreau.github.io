@@ -1,0 +1,40 @@
+{
+    "skills":[
+        {
+            "languages":[
+                {"name":"Java"},
+                {"name":"Javascript"}
+            ]
+        },
+        {
+            "Frameworks":[
+                {"name":"React"},
+                {"name":"Spring"}
+            ]
+        },
+        {
+            "Databases":[
+                {"name":"MongoDB"},
+                {"name":"SQL"}
+            ]
+        },
+        {
+            "Testing":[
+                {"name":"JUnit"},
+                {"name":"Jasmine"}
+            ]
+        },
+        {
+            "Other":[
+                {"name":"HTML5"},
+                {"name":"CSS/SCSS"},
+                {"name":"Git"},
+                {"name":"Node.js"},
+                {"name":"Travis CI"}
+            ]
+        },
+        {
+            "Degree":[{"name": "Carleton University - Bachelor's of Engineering(Software Stream)"}]
+        }
+    ]   
+}

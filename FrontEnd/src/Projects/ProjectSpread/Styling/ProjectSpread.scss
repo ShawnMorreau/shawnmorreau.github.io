@@ -1,0 +1,21 @@
+#spread {
+  width: 80vw;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-evenly;
+  & > #project {
+    height: 4em;
+    background-color: #f1f1f1;
+    display:flex;
+    align-items: center;
+    padding: 0 2px;
+    border: 1px solid #0f0e0c;
+
+  }
+  &>#project:hover{
+      transform: scale(1.2);
+  }
+  &>.active{
+    border: 1px solid #1d1;
+  }
+}

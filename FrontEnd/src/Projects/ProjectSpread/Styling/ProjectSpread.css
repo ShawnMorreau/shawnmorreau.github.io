@@ -1,0 +1,33 @@
+#spread {
+  width: 80vw;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#spread > #project {
+  height: 4em;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2px;
+  border: 1px solid #0f0e0c;
+}
+
+#spread > #project:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#spread > .active {
+  border: 1px solid #1d1;
+}
+/*# sourceMappingURL=ProjectSpread.css.map */

@@ -1,92 +1,102 @@
-.projectsContainer {
-  background-color: blue;
-  width: 100vw;
-  height: 100vh;
-  & > #title {
-    color: #fff;
-    text-orientation: upright;
-    writing-mode: vertical-rl;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 20px;
-    top: 25vh;
-    bottom: 25vh;
-  }
-  .activeProject {
-    display:flex;
-    width: 70vw;
-    margin:0 auto;
-    transform:translateY(50%);
-    .prev {
-      height: 0;
-      width: 0;
-      border-bottom: 20px solid transparent;
-      border-top: 20px solid transparent;
-      border-right: 30px solid red;
-      position: absolute;
-      top: 25vh;
-      right: 70vw;
-    }
+$black-text: #0f0e0c;
+$white-background: #f1f1f1;
+.outerContainer {
+  height: 90vh;
 
-    .next {
-      height: 0;
-      width: 0;
-      border-bottom: 20px solid transparent;
-      border-top: 20px solid transparent;
-      border-left: 30px solid red;
-      position: absolute;
+  
+  .projectsContainer {
+    // display: flex;
+    // flex-direction: column;
+    padding-top: 15vh;
+    & > #outerLineRight {
+      border-left: 3px solid #f1f1f1;
+      height: 23.8em;
+      position: fixed;
+      right: 20px;
       top: 25vh;
-      left: 70vw;
     }
-  }
-  .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color:green;
-    width: 70vw;
-    height: 50vh;
-    margin: 0 auto;
     & > #title {
-      z-index: 1;
-      display: block;
-      position: relative;
-      background-color: #f1f;
-      width: 35vw;
-      height: 3rem;
-      margin: 0 auto;
-      padding-top: 10px;
-      padding-left: 5px;
-      margin-bottom: 10px;
-      grid-area: title;
-      font-size: 1rem;
+      color: #f1f1f1;
+      text-orientation: upright;
+      writing-mode: vertical-rl;
+      font-size: 2em;
+      position: fixed;
+      left: 20px;
+      top: 25vh;
+      text-decoration: underline;
     }
-    & > #title:before {
-      content: "";
-      width: 35vw;
-      height: 3rem;
-      position: absolute;
-      z-index: -1;
-      background-color: cyan;
-      left: 5px;
-      top: 5px;
+    & > #allProjects {
+      & > #spread {
+        display: block;
+      }
     }
-    & > #info {
-      height:80%;
-      font-size: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      & > #skills {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color:red;
 
-        & > .skill {
-          margin-right: 10px;
-          margin-bottom: 15px;
-          white-space: nowrap;
+    & > .activeProject {
+      width: 60vw;
+      margin: 0 auto;
+      & > .project {
+        margin: 1em;
+
+        margin-bottom: 2em;
+        & > #title {
+          color: $black-text;
+          background-color: $white-background;
+          z-index: 1;
+          display: block;
+          margin: 0 auto;
+          width: 14em;
+          height: 2em;
+          box-shadow: 0.25em 0.25em #00c2cb;
+          padding-top: 0.5em;
+          margin-bottom: 1em;
         }
+        & > #info {
+          display: flex;
+          flex-direction: column;
+          // height: 85%;
+          min-height: 250px;
+          background-color: $white-background;
+          padding: 5px;
+          & > #desc {
+            color: $black-text;
+            text-align: left;
+            margin-bottom: 15px;
+          }
+          & > #skills {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: auto;
+            justify-content: space-between;
+            align-self: flex-end;
+
+            .skill {
+              align-self: flex-end;
+              color: $black-text;
+              margin-right: 1em;
+            }
+          }
+        }
+      }
+      .prev {
+        height: 0;
+        width: 0;
+        border-bottom: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-right: 30px solid red;
+        position: fixed;
+        left: 15vw;
+        top: 35vh;
+      }
+
+      .next {
+        height: 0;
+        width: 0;
+        border-bottom: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-left: 30px solid red;
+        position: fixed;
+        right: 15vw;
+        top: 35vh;
       }
     }
   }

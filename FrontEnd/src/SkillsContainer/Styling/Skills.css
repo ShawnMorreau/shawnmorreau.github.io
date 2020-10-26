@@ -1,0 +1,37 @@
+.skillsContainer {
+  color: #f1f1f1;
+}
+
+.skillsContainer > .skillGrouping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-transform: capitalize;
+}
+
+.skillsContainer > .skillGrouping > .skillList {
+  list-style: none;
+  padding: 0 0 5px 0;
+  color: #0f0e0c;
+  border: 1px solid #f1f1f1;
+  width: 40vw;
+  margin: 0 auto 1em auto;
+  height: 20vh;
+  min-height: 125px;
+  font-size: 1.5rem;
+  background-color: #f1f1f1;
+  font-weight: 700;
+}
+
+.skillsContainer > .skillGrouping > .skillList > .skill {
+  color: #0f0e0c;
+  font-size: 1rem;
+  font-weight: 400;
+}
+/*# sourceMappingURL=Skills.css.map */

@@ -1,0 +1,31 @@
+$black-text: #0f0e0c;
+$white-background: #f1f1f1;
+.skillsContainer {
+  color: $white-background;
+  & > .skillGrouping {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-transform: capitalize;
+
+    & > .skillList {
+        list-style: none;
+        padding: 0 0 5px 0;
+        color:$black-text;
+        border: 1px solid $white-background;
+        width: 40vw;
+        margin: 0 auto 1em auto;
+        height: 20vh;
+        min-height: 125px;
+        font-size: 1.5rem;
+        background-color: $white-background;
+        font-weight: 700;
+
+      & > .skill {
+        color: $black-text;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

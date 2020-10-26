@@ -1,6 +1,7 @@
 import React from "react";
-import Logo from "../images/SM_logo.png";
-import "./Contact.css";
+// import Logo from "../images/SM_logo.png";
+import Logo from "../images/logo.png";
+import "./Styling/Contact.css";
 import { Typography } from "@material-ui/core/";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -49,6 +50,7 @@ const Contact = (props) => {
         <br />
         <span>{location} Sarnia, Ontario</span>
       </div>
+      <div id = "backgroundImg"></div>
     </div>
   );
 };

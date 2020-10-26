@@ -10,13 +10,17 @@ const ProjectsContainer = () => {
       title={project.title}
       desc={project.desc}
       skills={project.skills}
-      key={i}
+      key={i + "-key"}
     />
   ));
+  const handleClick = i =>{
+    setActiveProject(i);
+  }
 
   return (
+    <div className="outerContainer">
     <div className="projectsContainer">
-      <aside id="title">Projects</aside>
+      <aside id="title">&nbsp;Projects&nbsp;</aside>
       <section className="activeProject">
         {activeProject > 0 && (
           <div className="prev" onClick={() => setActiveProject(activeProject - 1)}></div>
@@ -26,12 +30,16 @@ const ProjectsContainer = () => {
           <div className="next" onClick={() => setActiveProject(activeProject + 1)}></div>
         )}
       </section>
+      <div id = "outerLineRight"></div>
+      </div>
       <section id="allProjects">
           <ProjectSpread
             projects = {Projects.projects}
             active = {activeProject}
+            handleClick={handleClick}
           />
       </section>
+      
     </div>
   );
 };

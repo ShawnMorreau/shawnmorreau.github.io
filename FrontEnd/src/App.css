@@ -1,10 +1,16 @@
 .App {
   text-align: center;
-  background-color: #111;
+  /* background-color: #0f0e0c; */
+  background-image: linear-gradient(to bottom right, rgb(34, 31, 31),#000000);
   display:flex;
   min-height:100vh;
   flex-direction:column;
   box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+.App:hover{
+  cursor:default;
 }
 hr{
   width:100%;

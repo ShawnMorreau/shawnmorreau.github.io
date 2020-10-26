@@ -1,16 +1,18 @@
 import React from "react";
 import MiniView from "./MiniView";
+import "./Styling/ProjectSpread.css";
 const ProjectSpread = (props) => {
-  let { projects, active } = props;
+  let { handleClick, projects, active,id} = props;
   let projectsMiniViews = projects.map((project,i) => (
     <MiniView 
-        name={project.name} 
-        key={i}
+        name={project.title} 
+        key={i + "-key"}
+        handleClick={()=>handleClick(i)}
     />
   ));
   return(
-    <div>
-        {projectsMiniViews}
+    <div id = "spread">
+      {projectsMiniViews}
     </div>
   );
 };
