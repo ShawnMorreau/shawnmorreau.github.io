@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 .navBar {
   z-index: 1;
+}
+
+.navBar .content {
+  font-family: "Courier Prime", monospace;
+}
+
+.navBar .titles {
+  font-family: "Playfair Display", serif;
 }
 
 .navBar > ul {
@@ -33,9 +42,9 @@
   width: 50px;
 }
 
-.navBar > ul > li a {
-  color: #f1f1f1;
-  text-decoration: none;
+.navBar > ul > #homeLI #home #logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .navBar > ul > .links {
@@ -52,8 +61,29 @@
       justify-content: space-around;
 }
 
+.navBar > ul > .links > li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .navBar > ul > .links > li a {
   color: #f1f1f1;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar > ul > .links {
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .navBar > ul > .links {
+    padding: 0;
+    margin: 0;
+    width: 70vw;
+  }
 }
 /*# sourceMappingURL=NavBar.css.map */

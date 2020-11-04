@@ -32,9 +32,9 @@ const NavBar = () => {
     <div className="navBar">
       <ul>
         <li id="homeLI"><Link to="/" id="home"><img id="logo" src={Logo} alt=""/></Link></li>
-        <div className="links">
+        <div className="links content">
           <li><Link to="/about/">About</Link></li>
-          <li><Link to="/skills/">Skills+Certifications</Link></li>
+          <li><Link to="/skills/">Skills</Link></li>
           <li><Link to="/project/">Projects</Link></li>
           <li><Link to="/contact/">Contact</Link></li>
           {socialIcons}

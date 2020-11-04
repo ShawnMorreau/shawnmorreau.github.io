@@ -5,8 +5,8 @@ const Skill = ({skillInfo,title}) => {
             <li key={i} className="skill">{item["name"]}</li>
         );
     return(
-            <ul className="skillList">
-                {title}
+            <ul className="skillList content">
+                <h3>{title}</h3>
                 {skills}
             </ul>
     );

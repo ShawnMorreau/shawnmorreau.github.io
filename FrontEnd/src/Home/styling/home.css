@@ -1,78 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 .home:before {
-  width: 100%;
-  height: 100%;
   content: "";
-  background-color: rgba(0, 0, 0, 0.4);
+  min-width: 100vw;
+  min-height: 100vh;
   position: absolute;
+  opacity: 60%;
+  background-color: black;
+  top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .home {
-  background-image: url("../../images/background.jpg");
-  background-size: 80vw 80vh;
-  position: absolute;
-  top: 10vh;
-  left: 10vw;
-  right: 10vw;
-  bottom: 10vh;
-  z-index: 0;
+  background-image: url(../../images/backgroundv2.jpg);
   background-repeat: no-repeat;
-}
-
-.home #name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  z-index: 1;
-  width: 80vw;
-  color: #f1f1f1;
-  text-shadow: 2px 2px 5px #00c2cb;
-  margin: 0 auto;
-  font-size: 4em;
-  word-spacing: 2em;
-}
-
-.home .role {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.home .role .line {
+  background-size: 100% 100%;
+  min-height: calc(100vh - 50px);
+  overflow: hidden;
   position: relative;
-  z-index: 1;
 }
 
-.home .role .line:after {
+.home .content {
+  font-family: "Courier Prime", monospace;
+}
+
+.home .titles {
+  font-family: "Playfair Display", serif;
+}
+
+.home > #homepage {
+  margin-top: 25vh;
+}
+
+.home > #homepage > #name {
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #0f0e0c;
+  width: 100%;
+  position: relative;
+}
+
+.home > #homepage > .role {
+  color: #f1f1f1;
+  opacity: 90%;
+  text-shadow: 1px 1px #0f0e0c;
+}
+
+.home > #homepage > .role:after {
   content: "";
-  width: 1px;
   height: 100%;
-  position: absolute;
-  z-index: 1;
-  border-right: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-.home .role .blink {
-  -webkit-animation: blink 2s linear 1s infinite normal;
-          animation: blink 2s linear 1s infinite normal;
+  width: 1px;
+  border-right: 2px solid #f1f1f1;
+  margin-left: 1px;
+  -webkit-animation: blink 0.4s infinite ease;
+          animation: blink 0.4s infinite ease;
 }
 
 @-webkit-keyframes blink {
   from {
-    color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
   }
   to {
-    color: transparent;
+    opacity: 1;
   }
 }
 
 @keyframes blink {
   from {
-    color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
   }
   to {
-    color: transparent;
+    opacity: 1;
   }
+}
+
+.home > #homepage > .callToAction {
+  color: #f1f1f1;
+  text-shadow: 1px 1px 5px #0f0e0c;
+  margin: 50px 10vw 0 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.home > #homepage > .callToAction > .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100vw;
+          flex: 1 1 100vw;
+  position: relative;
+}
+
+.home > #homepage > .callToAction > .CTAButton {
+  background-color: #f1f1f1;
+  opacity: 95%;
+  width: 150px;
+}
+
+.home > #homepage > .callToAction > .CTAButton a {
+  text-decoration: none;
+  color: #0f0e0c;
+}
+
+.home > #homepage > .callToAction > .CTAButton:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=home.css.map */

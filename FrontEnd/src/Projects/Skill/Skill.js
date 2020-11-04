@@ -4,7 +4,7 @@ const Skill = props =>{
     const {name} = props;
     return(
         <span className = "skill">
-            {name}
+            {name} &nbsp;
         </span>
     );
 }

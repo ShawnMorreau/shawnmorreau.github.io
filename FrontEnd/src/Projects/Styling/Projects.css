@@ -1,119 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 .outerContainer {
-  height: 90vh;
+  min-height: calc(100vh - 50px);
 }
 
-.outerContainer .projectsContainer {
-  padding-top: 15vh;
+.outerContainer .content {
+  font-family: "Courier Prime", monospace;
 }
 
-.outerContainer .projectsContainer > #outerLineRight {
-  border-left: 3px solid #f1f1f1;
-  height: 23.8em;
-  position: fixed;
-  right: 20px;
-  top: 25vh;
+.outerContainer .titles {
+  font-family: "Playfair Display", serif;
 }
 
-.outerContainer .projectsContainer > #title {
+.outerContainer > .projectsContainer > #title {
   color: #f1f1f1;
-  text-orientation: upright;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  font-size: 2em;
-  position: fixed;
-  left: 20px;
-  top: 25vh;
-  text-decoration: underline;
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
-.outerContainer .projectsContainer > #allProjects > #spread {
-  display: block;
-}
-
-.outerContainer .projectsContainer > .activeProject {
-  width: 60vw;
+.outerContainer > .projectsContainer > .activeProject {
+  border: 1px solid #f1f1f1;
+  width: 85vw;
   margin: 0 auto;
+  -webkit-box-shadow: -5px 5px 4px #f1f1f1;
+          box-shadow: -5px 5px 4px #f1f1f1;
 }
 
-.outerContainer .projectsContainer > .activeProject > .project {
-  margin: 1em;
-  margin-bottom: 2em;
+.outerContainer > .projectsContainer > .activeProject > .project {
+  color: #f1f1f1;
 }
 
-.outerContainer .projectsContainer > .activeProject > .project > #title {
+.outerContainer > .projectsContainer > .activeProject > .project > #title {
+  display: block;
+  -webkit-box-shadow: -5px 5px 1px #fa2cca;
+          box-shadow: -5px 5px 1px #fa2cca;
   color: #0f0e0c;
   background-color: #f1f1f1;
-  z-index: 1;
-  display: block;
-  margin: 0 auto;
-  width: 14em;
-  height: 2em;
-  -webkit-box-shadow: 0.25em 0.25em #00c2cb;
-          box-shadow: 0.25em 0.25em #00c2cb;
+  font-size: 1.5em;
+  width: 75vw;
+  height: auto;
+  margin: 1em auto;
   padding-top: 0.5em;
-  margin-bottom: 1em;
 }
 
-.outerContainer .projectsContainer > .activeProject > .project > #info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 250px;
-  background-color: #f1f1f1;
-  padding: 5px;
+.outerContainer > .projectsContainer > .activeProject > .project > #info {
+  font-size: 1.1em;
+  margin: 0 3px;
 }
 
-.outerContainer .projectsContainer > .activeProject > .project > #info > #desc {
-  color: #0f0e0c;
-  text-align: left;
-  margin-bottom: 15px;
+.outerContainer > .projectsContainer > .activeProject > .project > #info > #desc {
+  line-height: 1.5em;
 }
 
-.outerContainer .projectsContainer > .activeProject > .project > #info > #skills {
+.outerContainer > .projectsContainer > .activeProject > .project > #info > #graph {
+  margin: 5px 0;
+}
+
+.outerContainer > .projectsContainer > .activeProject > .project > #info > #skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 5px;
 }
 
-.outerContainer .projectsContainer > .activeProject > .project > #info > #skills .skill {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  color: #0f0e0c;
-  margin-right: 1em;
+.outerContainer > .projectsContainer > .activeProject > .project > #info > #skills > .skill {
+  margin: 1px 5px;
 }
 
-.outerContainer .projectsContainer > .activeProject .prev {
+.outerContainer > #allProjects > #spread > .active {
+  color: #00c2cb;
+  border: 1px solid #00c2cb;
+}
+
+.outerContainer .prev {
   height: 0;
   width: 0;
-  border-bottom: 20px solid transparent;
-  border-top: 20px solid transparent;
-  border-right: 30px solid red;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #00c2cb;
   position: fixed;
-  left: 15vw;
-  top: 35vh;
+  left: 1vw;
+  top: 40vh;
 }
 
-.outerContainer .projectsContainer > .activeProject .next {
+.outerContainer .next {
   height: 0;
   width: 0;
-  border-bottom: 20px solid transparent;
-  border-top: 20px solid transparent;
-  border-left: 30px solid red;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #00c2cb;
   position: fixed;
-  right: 15vw;
-  top: 35vh;
+  right: 1vw;
+  top: 40vh;
 }
 /*# sourceMappingURL=Projects.css.map */

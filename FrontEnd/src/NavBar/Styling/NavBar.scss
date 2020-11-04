@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+$blue-logo-color: #00c2cb;
 .navBar {
+  .content{
+    font-family: "Courier Prime", monospace;
+  }
+  .titles{
+    font-family: "Playfair Display", serif;
+  }
   z-index: 1;
   & > ul {
     list-style: none;
@@ -9,23 +17,25 @@
     margin: 0;
     & > #homeLI {
       align-items: center;
-      padding:0;
-      margin:0;
+      padding: 0;
+      margin: 0;
       width: 50px;
       height: 50px;
       margin-left: 15px;
-
     }
     & > #homeLI #home #logo {
       width: 50px;
     }
-    & > li a {
-      color: #f1f1f1;
-      text-decoration: none;
+    & > #homeLI #home #logo:hover{
+      transform: scale(1.2);
     }
+   
     & > .links {
       align-items: center;
 
+      & > li:hover{
+        transform: scale(1.2);
+      }
       & > li a {
         color: #f1f1f1;
         text-decoration: none;
@@ -35,6 +45,31 @@
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-around;
+    }
+  }
+}
+
+// smol boi... yes I know.. I should be doing mobile first but I wanted
+//to get this out asap!
+@media only screen and (max-width: 600px) {
+  .navBar {
+    & > ul {
+      & > .links {
+        padding: 0;
+        margin: 0;
+        width: 90vw;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .navBar {
+    & > ul {
+      & > .links {
+        padding: 0;
+        margin: 0;
+        width: 70vw;
+      }
     }
   }
 }

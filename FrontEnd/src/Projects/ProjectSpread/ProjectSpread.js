@@ -8,6 +8,8 @@ const ProjectSpread = (props) => {
         name={project.title} 
         key={i + "-key"}
         handleClick={()=>handleClick(i)}
+        active={active}
+        id={i}
     />
   ));
   return(

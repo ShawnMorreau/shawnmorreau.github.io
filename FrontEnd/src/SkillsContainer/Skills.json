@@ -1,13 +1,15 @@
 {
     "skills":[
         {
-            "languages":[
+            "Languages":[
                 {"name":"Java"},
-                {"name":"Javascript"}
+                {"name":"Javascript"},
+                {"name":"Python"},
+                {"name":"Ruby"}
             ]
         },
         {
-            "Frameworks":[
+            "Frameworks/Libraries":[
                 {"name":"React"},
                 {"name":"Spring"}
             ]

@@ -1,37 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 .skillsContainer {
   color: #f1f1f1;
+  position: relative;
+  min-height: calc(100vh - 50px);
+}
+
+.skillsContainer .content {
+  font-family: "Courier Prime", monospace;
+}
+
+.skillsContainer .titles {
+  font-family: "Playfair Display", serif;
 }
 
 .skillsContainer > .skillGrouping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-transform: capitalize;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: auto;
 }
 
 .skillsContainer > .skillGrouping > .skillList {
   list-style: none;
-  padding: 0 0 5px 0;
-  color: #0f0e0c;
-  border: 1px solid #f1f1f1;
-  width: 40vw;
-  margin: 0 auto 1em auto;
-  height: 20vh;
-  min-height: 125px;
-  font-size: 1.5rem;
-  background-color: #f1f1f1;
-  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 4 50vw;
+          flex: 1 4 50vw;
+  font-size: 1.1em;
 }
 
 .skillsContainer > .skillGrouping > .skillList > .skill {
-  color: #0f0e0c;
-  font-size: 1rem;
-  font-weight: 400;
+  color: #00c2cb;
+  font-size: 1em;
+}
+
+.skillsContainer > #bottom_images > .binary {
+  position: relative;
+  z-index: 0;
+  padding-top: 40px;
+  width: 80vw;
+}
+
+.skillsContainer > #bottom_images > .hands {
+  position: absolute;
+  width: 80px;
+  left: calc(50% - 40px);
+  background-color: #0f0e0c;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  z-index: 1;
 }
 /*# sourceMappingURL=Skills.css.map */

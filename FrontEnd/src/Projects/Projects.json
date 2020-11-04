@@ -2,7 +2,7 @@
     "projects": [
       {
         "title": "Trivial File Transfer Protocol",
-        "desc": "This Java program is a TFTP implementation that acts similar to a TCP handshake, which allows packets to be sent from one computer to another. Acknowledgement packets ensures that eachpacket was sent successfully",
+        "desc": "This Java program is a TFTP implementation that acts similar to a TCP handshake, which allows packets to be sent from one computer to another. Acknowledgement packets ensures that each packet was sent successfully",
         "skills": [
           "UML diagrams",
           "Client/Server architecture",
@@ -21,7 +21,7 @@
       },
       {
         "title": "Message Board",
-        "desc": "A full stack (MERN) site using Express/Node to create a REST API in order to communicate with the MongoDB           database. This allows users to register, create new messages, and view other people&apos;s messages. It&apos;s currently a local host project and a minimum viable product.",
+        "desc": "A full stack (MERN) site using Express/Node to create a REST API in order to communicate with the MongoDB database. This allows users to register an account, create new messages, and view other people's messages. It's currently a local host project and a minimum viable product.",
         "skills": [
           "Node.js",
           "React",
@@ -36,7 +36,7 @@
       },
       {
         "title": "Project Management System",
-        "desc": "This Spring project relies heavily on mocking agile development to mimic what working on projects would be like. I created features on new branches and pull requests were required to add to the production branch.  Every new feature required unit tests as a bare minimum. I conducted  biweekly stand-ups to view the project&apos;s status and to consider future features",
+        "desc": "This Spring project relies heavily on mocking agile development to mimic what working on projects would be like. I created features on new branches and any new features required a pull request to be merged onto the production branch.  Every new feature required unit tests as a bare minimum. I conducted biweekly stand-ups to view the project's status and to consider future features",
         "skills": [
           "Spring",
           "HTML",
@@ -47,7 +47,7 @@
       },
       {
         "title": "JavaScript Calculator",
-        "desc": "I created a calculator using JavaScript to manipulate the DOM which consisted of adding the many buttons and their repective event listeners. I also performed the calculations using closures in order to allow for chaining and styling was done with CSS.",
+        "desc": "I created a calculator using JavaScript to manipulate the DOM which consisted of adding the many buttons and their repective event listeners. I also performed the calculations using closures in order to allow for chaining and styling was done with SCSS.",
         "skills": [
           "Jasmine testing",
           "JS/ES6",

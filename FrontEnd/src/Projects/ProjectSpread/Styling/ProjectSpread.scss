@@ -1,21 +1,23 @@
+$black-text: #0f0e0c;
+$white-background: #f1f1f1;
+$blue-logo-color: #00c2cb;
 #spread {
   width: 80vw;
   margin: 1em auto;
   display: flex;
   justify-content: space-evenly;
   & > #project {
-    height: 4em;
-    background-color: #f1f1f1;
-    display:flex;
+    background-color: $black-text;
+    display: flex;
     align-items: center;
     padding: 0 2px;
-    border: 1px solid #0f0e0c;
-
+    border: 1px solid $white-background;
+    font-size: 1em;
+    min-height: 2em;
+    color: $white-background;
+    margin: 0.5px;
   }
-  &>#project:hover{
-      transform: scale(1.2);
-  }
-  &>.active{
-    border: 1px solid #1d1;
+  & > #project:hover {
+    transform: scale(1.1);
   }
 }
