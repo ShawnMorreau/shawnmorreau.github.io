@@ -15,10 +15,10 @@ $blue-logo-color: #00c2cb;
   min-width: 100vw;
   min-height: 100vh;
   position: absolute;
-  opacity: 60%;
   background-color: black;
   top: 0;
   left: 0;
+  opacity: 0.6;
 }
 .home {
   background-image: url(../../images/backgroundv2.jpg);
@@ -43,7 +43,6 @@ $blue-logo-color: #00c2cb;
     }
     & > .role {
       color: $white-background;
-      opacity: 90%;
       text-shadow: 1px 1px $black-text;
       position:relative;
     }
@@ -99,7 +98,6 @@ $blue-logo-color: #00c2cb;
       & > .CTAButton {
         position: relative;
         background-color: $white-background;
-        opacity: 95%;
         width: 150px;
         & a {
           text-decoration: none;
