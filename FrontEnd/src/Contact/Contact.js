@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import Logo from "../images/SM_logo.png";
 import Logo from "../images/logo.png";
 import "./Styling/Contact.css";
-import { Typography } from "@material-ui/core/";
+import { Typography,Button } from "@material-ui/core/";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneAlt,

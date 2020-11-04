@@ -25,7 +25,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
-  "homepage": "https://ShawnMorreau.github.io/",
+  "homepage": "https://shawnmorreau.ca/",
   "eslintConfig": {
     "extends": "react-app"
   },
