@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Styling/Projects.css";
 import Projects from "../Projects.json";
 import Project from "../Project/Project";

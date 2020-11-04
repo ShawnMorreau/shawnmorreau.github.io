@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
@@ -23,12 +30,14 @@ $blue-logo-color: #00c2cb;
       border: 1px solid $white-background;
       width: 85vw;
       margin: 0 auto;
-      box-shadow: -5px 5px 4px $white-background;
+      -webkit-box-shadow: -5px 5px 4px $white-background;
+              box-shadow: -5px 5px 4px $white-background;
       & > .project {
         color: $white-background;
         & > #title {
           display: block;
-          box-shadow: -5px 5px 1px #fa2cca;
+          -webkit-box-shadow: -5px 5px 1px #fa2cca;
+                  box-shadow: -5px 5px 1px #fa2cca;
           color: $black-text;
           background-color: $white-background;
           font-size: 1.5em;
@@ -47,12 +56,16 @@ $blue-logo-color: #00c2cb;
             margin: 5px 0;
           }
           & > #skills {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
             margin-bottom: 5px;
             & > .skill {
-              // flex-wrap: nowrap;
               margin: 1px 5px;
             }
           }

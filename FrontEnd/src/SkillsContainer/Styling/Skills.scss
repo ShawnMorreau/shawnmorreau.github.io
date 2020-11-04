@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 
 $black-text: #0f0e0c;
@@ -14,15 +21,24 @@ $blue-logo-color: #00c2cb;
     font-family: "Playfair Display", serif;
   }
   & > .skillGrouping {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-top:auto;
     & > .skillList {
       list-style: none;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
       margin: 10px 10px;
-      flex: 1 4 50vw;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 4 50vw;
+              flex: 1 4 50vw;
       font-size: 1.1em;
 
       & > .skill {

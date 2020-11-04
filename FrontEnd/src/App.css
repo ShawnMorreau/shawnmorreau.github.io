@@ -1,11 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .App {
   text-align: center;
   /* background-color: #0f0e0c; */
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(34, 31, 31)),to(#000000));
+  background-image: -o-linear-gradient(top left, rgb(34, 31, 31),#000000);
   background-image: linear-gradient(to bottom right, rgb(34, 31, 31),#000000);
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
   min-height:100vh;
-  flex-direction:column;
-  box-sizing: border-box;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding:0;
   margin:0;
 }

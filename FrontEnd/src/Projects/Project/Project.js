@@ -1,9 +1,8 @@
 import React from "react";
-import ProjectsContainer from "../ProjectContainer/ProjectsContainer";
 import Skill from "../Skill/Skill";
 import graph_img from "../../images/rsz_projects_3.png";
 const Project = (props) => {
-  const { title, desc, skills, active } = props;
+  const { title, desc, skills} = props;
   const skillMap = skills.map((skill, i) => <Skill name={skill} key={i} />);
   return (
     <div className="project">

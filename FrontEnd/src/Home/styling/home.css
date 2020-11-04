@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 .home:before {
   content: "";
@@ -42,6 +48,7 @@
   color: #f1f1f1;
   opacity: 90%;
   text-shadow: 1px 1px #0f0e0c;
+  position: relative;
 }
 
 .home > #homepage > .role:after {
@@ -51,7 +58,8 @@
   border-right: 2px solid #f1f1f1;
   margin-left: 1px;
   -webkit-animation: blink 0.4s infinite ease;
-          animation: blink 0.4s infinite ease;
+  animation: blink 0.4s infinite ease;
+  position: relative;
 }
 
 @-webkit-keyframes blink {
@@ -81,23 +89,24 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .home > #homepage > .callToAction > .text {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100vw;
-          flex: 1 1 100vw;
+  -ms-flex: 1 1 100vw;
+  flex: 1 1 100vw;
   position: relative;
 }
 
 .home > #homepage > .callToAction > .CTAButton {
+  position: relative;
   background-color: #f1f1f1;
   opacity: 95%;
   width: 150px;
@@ -110,6 +119,6 @@
 
 .home > #homepage > .callToAction > .CTAButton:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=home.css.map */

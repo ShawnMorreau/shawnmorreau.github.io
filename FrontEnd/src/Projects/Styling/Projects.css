@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 .outerContainer {
   min-height: calc(100vh - 50px);
@@ -22,7 +28,7 @@
   width: 85vw;
   margin: 0 auto;
   -webkit-box-shadow: -5px 5px 4px #f1f1f1;
-          box-shadow: -5px 5px 4px #f1f1f1;
+  box-shadow: -5px 5px 4px #f1f1f1;
 }
 
 .outerContainer > .projectsContainer > .activeProject > .project {
@@ -32,7 +38,7 @@
 .outerContainer > .projectsContainer > .activeProject > .project > #title {
   display: block;
   -webkit-box-shadow: -5px 5px 1px #fa2cca;
-          box-shadow: -5px 5px 1px #fa2cca;
+  box-shadow: -5px 5px 1px #fa2cca;
   color: #0f0e0c;
   background-color: #f1f1f1;
   font-size: 1.5em;
@@ -60,10 +66,10 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 5px;
 }
 

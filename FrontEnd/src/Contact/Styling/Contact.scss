@@ -1,21 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contactContainer {
   padding: 5% 0;
   overflow: hidden;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas:
+      grid-template-areas:
     "logo cta ."
     "  .  cta contact";
-  // "  .  cta contact";
+  -ms-grid-rows: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
+  -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   .content {
     font-family: "Courier Prime", monospace;
@@ -24,6 +34,8 @@ $blue-logo-color: #00c2cb;
     font-family: "Playfair Display", serif;
   }
   & > .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: logo;
     max-width: 175px;
     padding: 0;
@@ -31,6 +43,8 @@ $blue-logo-color: #00c2cb;
     z-index: 1;
   }
   & > #info {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
     height: 150px;
     color: $white-background;
     text-align: left;
@@ -55,10 +69,12 @@ $blue-logo-color: #00c2cb;
 }
 
 #callToAction {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   z-index: 1;
   margin: 0 auto;
   padding: 0;
-  // width: 100%;
   width: 50vw;
   grid-area: cta;
   font-size: 1.25em;
@@ -113,8 +129,13 @@ $blue-logo-color: #00c2cb;
 
 @media only screen and (max-width: 1000px) {
   #contactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 1em;
     padding:0;
     min-height: calc(100vh - 50px);
@@ -124,12 +145,13 @@ $blue-logo-color: #00c2cb;
     }
     & > #callToAction {
       width: calc(100vw - 2em - 10%);
-      flex: 1;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
     }
     & > #info {
       height: 90px;
       padding: 0;
-      // margin-top: auto;
       width: calc(100vw - 2em - 10%);
       line-height: 1.5em;
     }

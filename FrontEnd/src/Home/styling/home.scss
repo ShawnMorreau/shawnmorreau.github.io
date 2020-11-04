@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
@@ -38,6 +45,7 @@ $blue-logo-color: #00c2cb;
       color: $white-background;
       opacity: 90%;
       text-shadow: 1px 1px $black-text;
+      position:relative;
     }
     & > .role:after{
       content:"";
@@ -45,7 +53,17 @@ $blue-logo-color: #00c2cb;
       width: 1px;
       border-right: 2px solid $white-background;
       margin-left: 1px;
-      animation: blink 0.4s infinite ease;
+      -webkit-animation: blink 0.4s infinite ease;
+              animation: blink 0.4s infinite ease;
+      position: relative;
+    }
+    @-webkit-keyframes blink {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
     }
     @keyframes blink {
       from{
@@ -59,16 +77,27 @@ $blue-logo-color: #00c2cb;
       color: $white-background;
       text-shadow: 1px 1px 5px $black-text;
       margin: 50px 10vw 0 10vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
 
       & > .text {
-        flex: 1 1 100vw;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100vw;
+                flex: 1 1 100vw;
         position: relative;
       }
       & > .CTAButton {
+        position: relative;
         background-color: $white-background;
         opacity: 95%;
         width: 150px;
@@ -78,7 +107,9 @@ $blue-logo-color: #00c2cb;
         }
       }
       & > .CTAButton:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
       }
     }
   }

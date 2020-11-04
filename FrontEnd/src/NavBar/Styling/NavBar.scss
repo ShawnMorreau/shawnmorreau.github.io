@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 $blue-logo-color: #00c2cb;
 .navBar {
@@ -10,13 +17,22 @@ $blue-logo-color: #00c2cb;
   z-index: 1;
   & > ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     margin: 0;
     & > #homeLI {
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding: 0;
       margin: 0;
       width: 50px;
@@ -27,14 +43,20 @@ $blue-logo-color: #00c2cb;
       width: 50px;
     }
     & > #homeLI #home #logo:hover{
-      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
     }
    
     & > .links {
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 
       & > li:hover{
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
       }
       & > li a {
         color: #f1f1f1;
@@ -42,15 +64,17 @@ $blue-logo-color: #00c2cb;
       }
 
       width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-around;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
     }
   }
 }
 
-// smol boi... yes I know.. I should be doing mobile first but I wanted
-//to get this out asap!
 @media only screen and (max-width: 600px) {
   .navBar {
     & > ul {

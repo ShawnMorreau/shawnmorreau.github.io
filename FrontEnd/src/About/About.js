@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import "./Styling/about.css";
-import aboutBackground from "../images/about.png";
 import me from "../images/me.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode, faFileCode } from "@fortawesome/free-solid-svg-icons";
