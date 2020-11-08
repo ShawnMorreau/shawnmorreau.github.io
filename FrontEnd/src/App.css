@@ -7,10 +7,9 @@
 
 .App {
   text-align: center;
-  /* background-color: #0f0e0c; */
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(34, 31, 31)),to(#000000));
-  background-image: -o-linear-gradient(top left, rgb(34, 31, 31),#000000);
-  background-image: linear-gradient(to bottom right, rgb(34, 31, 31),#000000);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(2,10,30)),to(rgb(31, 0, 145)));
+  background-image: -o-linear-gradient(top left, rgb(2,10,30),rgb(31, 0, 145));
+  background-image: linear-gradient(to bottom right,rgb(2,10,30),rgb(31, 0, 145));
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;

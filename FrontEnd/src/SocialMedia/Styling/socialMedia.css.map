@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACT,SAAS,EAAC,KAAK;CAChB",
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CAUd;;AAXD,AAIM,QAJE,GAEF,EAAE,GACA,CAAC,GACC,WAAW,CAAC;EACd,SAAS,EAAE,KAAK;EAChB,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,OAAO;CACf",
     "sources": [
         "socialMedia.scss"
     ],

@@ -5,6 +5,8 @@
 * Browsers: last 4 version
 */
 #spread {
+  position: relative;
+  z-index: 1;
   width: 80vw;
   margin: 1em auto;
   display: -webkit-box;

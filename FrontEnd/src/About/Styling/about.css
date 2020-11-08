@@ -12,12 +12,26 @@
   box-sizing: border-box;
 }
 
+#about:after {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #0d1128;
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+  z-index: 0;
+}
+
 #about {
+  background-image: url("../../images/glass.png");
   width: 100%;
   min-height: calc(100vh - 50px);
   display: flex column;
   font-size: 1.5em;
   position: relative;
+  z-index: 1;
 }
 
 #about .header {
@@ -32,12 +46,26 @@
 
 #about > #title {
   color: #f1f1f1;
-  text-shadow: 2px 2px 5px #00c2cb;
+  text-shadow: 2px 2px 5px #0f0e0c;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
 }
 
 #about > #images > #me {
-  width: 150px;
+  width: 200px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
+  -o-object-position: 60%;
+     object-position: 60%;
+  padding: 0;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 #about > #details {
@@ -48,33 +76,19 @@
   -ms-flex: 1 100%;
   flex: 1 100%;
   padding-bottom: 2em;
+  position: relative;
+  z-index: 1;
+  text-align: justify;
 }
 
 #about > #details > #desc > #laptop {
   display: block;
-  margin: 5px calc(50% - 1em);
+  margin: 20px 50%;
+  font-size: 1.1em;
 }
 
 #about > #details > #selfLearning > #code {
   display: none;
-}
-
-#about > .bottom {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 5px;
-  width: 100%;
-}
-
-#about > .bottom > #logos {
-  color: #00c2cb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -82,19 +96,24 @@
     display: flex column;
   }
   #about .content {
-    font-size: 0.9em;
+    font-size: 0.86em;
   }
   #about > #title {
-    margin: 5px 25vw 0.5em 0;
+    text-align: left;
+    margin-left: 24px;
+    z-index: 1;
+  }
+  #about > #details {
+    width: 70vw;
   }
   #about > #details > #desc > #laptop {
     font-size: 2em;
-    margin: 5px 34vw;
+    margin: 35px 35vw;
   }
   #about > #images > #me {
     float: right;
     width: 25vw;
-    margin-top: -5vw;
+    height: 400px;
   }
 }
 

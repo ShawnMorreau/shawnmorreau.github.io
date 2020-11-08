@@ -1,34 +1,13 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import "./Styling/about.css";
-import me from "../images/me.jpg";
+import me from "../images/m4-nobg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode, faFileCode } from "@fortawesome/free-solid-svg-icons";
-import {
-  faJava,
-  faJs,
-  faNode,
-  faPython,
-  faGithub,
-  faReact,
-  faHtml5,
-  faCss3,
-  faSass,
-} from "@fortawesome/free-brands-svg-icons";
 
 const About = (props) => {
   const laptop = <FontAwesomeIcon key={0} icon={faLaptopCode} />;
   const code = <FontAwesomeIcon key={1} icon={faFileCode} />;
-  const java = <FontAwesomeIcon key={2} icon={faJava} />;
-  const js = <FontAwesomeIcon key={3} icon={faJs} />;
-  const node = <FontAwesomeIcon key={4} icon={faNode} />;
-  const html = <FontAwesomeIcon key={5} icon={faHtml5} />;
-  const python = <FontAwesomeIcon key={6} icon={faPython} />;
-  const github = <FontAwesomeIcon key={7} icon={faGithub} />;
-  const react = <FontAwesomeIcon key={8} icon={faReact} />;
-  const css = <FontAwesomeIcon key={9} icon={faCss3} />;
-  const scss = <FontAwesomeIcon key={10} icon={faSass} />;
-  const arr = [java, js, node, html, python, github, react, css, scss];
   return (
     <div id="about">
       <Typography id="title" className="header" variant="h3" component="h1">
@@ -62,9 +41,6 @@ const About = (props) => {
           <span id="code">{code}</span>
         </section>
       </section>
-      <div className="bottom">
-        <section id="logos">{arr}</section>
-      </div>
     </div>
   );
 };

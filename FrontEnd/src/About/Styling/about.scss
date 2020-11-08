@@ -16,13 +16,27 @@ $blue-logo-color: #00c2cb;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+#about:after{
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgb(13,17,40);
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+  z-index:0;
+}
 #about {
+  background-image: url("../../images/glass.png");
   width: 100%;
   min-height: calc(100vh - 50px);
   display: flex column;
   font-size: 1.5em;
   position: relative;
+  z-index:1;
+
+  
   .header {
     font-family: "Playfair Display", serif;
     font-size: 3em;
@@ -33,13 +47,26 @@ $blue-logo-color: #00c2cb;
   }
   & > #title {
     color: $white-background;
-    text-shadow: 2px 2px 5px $blue-logo-color;
+    text-shadow: 2px 2px 5px $black-text;
+    margin:0;
+    padding:0;
+    z-index:1;
+    position: relative;
   }
 
   & > #images {
     & > #me {
-      width: 150px;
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
       border-radius: 50%;
+      object-position: 60%;
+      padding: 0;
+      margin-top: -20px;
+      margin-bottom: 10px;
+      position: relative;
+      z-index:1;
+      
     }
   }
   & > #details {
@@ -50,10 +77,16 @@ $blue-logo-color: #00c2cb;
     -ms-flex: 1 100%;
     flex: 1 100%;
     padding-bottom: 2em;
+    position: relative;
+    z-index:1;
+    text-align: justify;
+
+
     & > #desc {
       & > #laptop {
         display: block;
-        margin: 5px calc(50% - 1em);
+        margin: 20px 50%;
+        font-size: 1.1em;
       }
     }
     & > #selfLearning {
@@ -62,38 +95,27 @@ $blue-logo-color: #00c2cb;
       }
     }
   }
-  & > .bottom {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 5px;
-    width: 100%;
-
-    & > #logos {
-      color: $blue-logo-color;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
-      font-size: 1.5em;
-    }
-  }
 }
 @media only screen and (min-width: 800px) {
   #about {
     display: flex column;
     .content {
-      font-size: 0.9em;
+      font-size: 0.86em;
+      
     }
     & > #title {
-      margin: 5px 25vw 0.5em 0;
+      // margin: 5px 25vw 0.5em 0;
+      text-align: left;
+      margin-left: 24px;
+      z-index:1;
+
     }
     & > #details {
+      width: 70vw;
       & > #desc {
         & > #laptop {
           font-size: 2em;
-          margin: 5px 34vw;
+          margin: 35px 35vw;
         }
       }
     }
@@ -102,7 +124,7 @@ $blue-logo-color: #00c2cb;
       & > #me {
         float: right;
         width: 25vw;
-        margin-top: -5vw;
+        height: 400px;
       }
     }
   }

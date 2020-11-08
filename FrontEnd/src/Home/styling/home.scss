@@ -12,13 +12,14 @@ $blue-logo-color: #00c2cb;
 
 .home:before {
   content: "";
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   position: absolute;
   background-color: black;
   top: 0;
   left: 0;
   opacity: 0.6;
+  z-index:0;
 }
 .home {
   background-image: url(../../images/backgroundv2.jpg);

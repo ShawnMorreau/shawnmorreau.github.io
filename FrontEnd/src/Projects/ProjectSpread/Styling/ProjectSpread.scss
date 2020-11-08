@@ -9,6 +9,8 @@ $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
 #spread {
+  position: relative;
+  z-index:1;
   width: 80vw;
   margin: 1em auto;
   display: -webkit-box;
@@ -17,6 +19,7 @@ $blue-logo-color: #00c2cb;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  
   & > #project {
     background-color: $black-text;
     display: -webkit-box;

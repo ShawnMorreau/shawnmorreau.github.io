@@ -11,9 +11,24 @@ $blue-logo-color: #00c2cb;
 
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
 
+.outerContainer:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(13,17,40);
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+  z-index:0;
+}
 .outerContainer {
   min-height: calc(100vh - 50px);
-
+  background-image: url("../../images/test.png");
+  background-size: 100% 100%;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
   .content {
     font-family: "Courier Prime", monospace;
   }
@@ -21,6 +36,8 @@ $blue-logo-color: #00c2cb;
     font-family: "Playfair Display", serif;
   }
   & > .projectsContainer {
+    position: relative;
+    z-index:1;
     & > #title {
       color: $white-background;
       font-size: 3em;
@@ -48,12 +65,14 @@ $blue-logo-color: #00c2cb;
         }
         & > #info {
           font-size: 1.1em;
-          margin: 0 3px;
+          margin: 0 10px;
+          text-align: justify;
           & > #desc {
             line-height: 1.5em;
           }
           & > #graph {
-            margin: 5px 0;
+            margin: 10px auto;
+            display: block;
           }
           & > #skills {
             display: -webkit-box;
@@ -102,5 +121,12 @@ $blue-logo-color: #00c2cb;
     position: fixed;
     right: 1vw;
     top: 40vh;
+  }
+}
+
+@media only screen and (min-width: 750px){
+  .outerContainer {
+    padding-top: 12vh;
+    // padding-bottom: 15vh;
   }
 }
