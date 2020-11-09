@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
@@ -22,25 +22,26 @@ $blue-logo-color: #00c2cb;
   z-index: 0;
 }
 .skillsContainer {
-  z-index: 1;
+  z-index: 0;
   background: #0f0e0c url("../../images/astro.png") no-repeat;
   background-size: 100% 100%;
   object-fit: cover;
   width: 100%;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   color: $white-background;
   position: relative;
-  padding-bottom: .1em;
+  padding-bottom: 0.1em;
   .content {
-    font-family: "Courier Prime", monospace;
-  text-shadow: -2px 2px 4px $black-text;
-
+    font-family: 'Indie Flower', cursive;
+    text-shadow: -2px 2px 4px $black-text;
   }
   .titles {
     font-family: "Playfair Display", serif;
     position: relative;
     text-shadow: -2px 2px 4px $black-text;
-
+  }
+  & > .title {
+    padding-top: 50px;
   }
   & > .skillGrouping {
     display: -webkit-box;
@@ -64,16 +65,15 @@ $blue-logo-color: #00c2cb;
       flex: 1 4 50vw;
       font-size: 1.3em;
       position: relative;
-      z-index:1;
+      z-index: 1;
 
       & > .skill {
         color: $blue-logo-color;
         font-weight: 600;
         font-size: 0.9em;
         position: relative;
-        z-index:1;
+        z-index: 1;
         margin-bottom: 2px;
-        
       }
     }
   }

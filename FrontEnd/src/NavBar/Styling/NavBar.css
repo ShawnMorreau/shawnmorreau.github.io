@@ -4,13 +4,18 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 .navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
   z-index: 1;
 }
 
 .navBar .content {
-  font-family: "Courier Prime", monospace;
+  font-family: 'Indie Flower', cursive;
 }
 
 .navBar .titles {

@@ -4,13 +4,13 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 .home:before {
   content: "";
   min-width: 100%;
   min-height: 100%;
   position: absolute;
-  background-color: black;
+  background-color: #0d1128;
   top: 0;
   left: 0;
   opacity: 0.6;
@@ -21,13 +21,13 @@
   background-image: url(../../images/backgroundv2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
 .home .content {
-  font-family: "Courier Prime", monospace;
+  font-family: 'Indie Flower', cursive;
 }
 
 .home .titles {

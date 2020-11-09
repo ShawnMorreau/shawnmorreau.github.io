@@ -6,7 +6,7 @@ import SkillIcons from "../iconsBanner/iconsBanner";
 const SkillsContainer = props => {
     return(
         <div className="skillsContainer">
-            <Typography component="h1" variant="h2" className="titles">Skills</Typography>
+            <Typography component="h1" variant="h2" className="titles title">Skills</Typography>
             <SkillGroupings/>
             <span id="bottom_images">
                 <SkillIcons/>

@@ -6,7 +6,7 @@
 */
 
 
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
@@ -25,24 +25,24 @@ $blue-logo-color: #00c2cb;
   top: 0;
   left: 0;
   opacity: 0.85;
-  z-index:0;
 }
 #about {
   background-image: url("../../images/glass.png");
   width: 100%;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   display: flex column;
   font-size: 1.5em;
   position: relative;
   z-index:1;
-
+  padding:50px 0;
+  z-index:0;
   
   .header {
     font-family: "Playfair Display", serif;
     font-size: 3em;
   }
   .content {
-    font-family: "Courier Prime", monospace;
+    font-family: 'Indie Flower', cursive;
     line-height: 1.5em;
   }
   & > #title {
@@ -87,6 +87,7 @@ $blue-logo-color: #00c2cb;
         display: block;
         margin: 20px 50%;
         font-size: 1.1em;
+        display:none;
       }
     }
     & > #selfLearning {
@@ -99,16 +100,16 @@ $blue-logo-color: #00c2cb;
 @media only screen and (min-width: 800px) {
   #about {
     display: flex column;
+    min-height:100vh;
     .content {
       font-size: 0.86em;
       
     }
     & > #title {
-      // margin: 5px 25vw 0.5em 0;
       text-align: left;
       margin-left: 24px;
       z-index:1;
-
+      margin-bottom: 0.6em;
     }
     & > #details {
       width: 70vw;
@@ -116,6 +117,7 @@ $blue-logo-color: #00c2cb;
         & > #laptop {
           font-size: 2em;
           margin: 35px 35vw;
+          display:none;
         }
       }
     }

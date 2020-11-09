@@ -28,6 +28,7 @@ const About = (props) => {
           </Typography>
           <span id="laptop">{laptop}</span>
         </section>
+        <br/>
         <section id="selfLearning">
           <Typography component="p" className="content">
             Through my degree at Carleton University I learned Java, Python, C

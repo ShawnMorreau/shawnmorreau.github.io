@@ -4,7 +4,7 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,17 +21,18 @@
   top: 0;
   left: 0;
   opacity: 0.85;
-  z-index: 0;
 }
 
 #about {
   background-image: url("../../images/glass.png");
   width: 100%;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   display: flex column;
   font-size: 1.5em;
   position: relative;
   z-index: 1;
+  padding: 50px 0;
+  z-index: 0;
 }
 
 #about .header {
@@ -40,7 +41,7 @@
 }
 
 #about .content {
-  font-family: "Courier Prime", monospace;
+  font-family: 'Indie Flower', cursive;
   line-height: 1.5em;
 }
 
@@ -85,6 +86,7 @@
   display: block;
   margin: 20px 50%;
   font-size: 1.1em;
+  display: none;
 }
 
 #about > #details > #selfLearning > #code {
@@ -94,6 +96,7 @@
 @media only screen and (min-width: 800px) {
   #about {
     display: flex column;
+    min-height: 100vh;
   }
   #about .content {
     font-size: 0.86em;
@@ -102,6 +105,7 @@
     text-align: left;
     margin-left: 24px;
     z-index: 1;
+    margin-bottom: 0.6em;
   }
   #about > #details {
     width: 70vw;
@@ -109,6 +113,7 @@
   #about > #details > #desc > #laptop {
     font-size: 2em;
     margin: 35px 35vw;
+    display: none;
   }
   #about > #images > #me {
     float: right;

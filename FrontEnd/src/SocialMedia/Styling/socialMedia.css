@@ -9,4 +9,9 @@
   margin-right: 10px;
   color: #f1f1f1;
 }
+
+#socials > li > a > .socialIcon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /*# sourceMappingURL=socialMedia.css.map */

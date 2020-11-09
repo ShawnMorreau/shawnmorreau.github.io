@@ -20,7 +20,7 @@ const ProjectsContainer = () => {
   return (
     <div className="outerContainer">
     <div className="projectsContainer">
-      <aside id="title">&nbsp;Projects&nbsp;</aside>
+      <aside id="title" className="titles">&nbsp;Projects&nbsp;</aside>
       <section className="activeProject">
         {activeProject > 0 && (
           <div className="prev" onClick={() => setActiveProject(activeProject - 1)}></div>

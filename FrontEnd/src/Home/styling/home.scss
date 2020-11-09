@@ -8,14 +8,14 @@
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 
 .home:before {
   content: "";
   min-width: 100%;
   min-height: 100%;
   position: absolute;
-  background-color: black;
+  background-color: rgb(13,17,40);
   top: 0;
   left: 0;
   opacity: 0.6;
@@ -25,11 +25,11 @@ $blue-logo-color: #00c2cb;
   background-image: url(../../images/backgroundv2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
   .content {
-    font-family: "Courier Prime", monospace;
+    font-family: 'Indie Flower', cursive;
   }
   .titles {
     font-family: "Playfair Display", serif;

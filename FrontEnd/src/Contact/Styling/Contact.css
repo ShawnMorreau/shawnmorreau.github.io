@@ -4,19 +4,14 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #contactContainer {
+  min-height: 100vh;
   padding: 5% 0;
   overflow: hidden;
   display: -ms-grid;
@@ -29,7 +24,7 @@
 }
 
 #contactContainer .content {
-  font-family: "Courier Prime", monospace;
+  font-family: 'Indie Flower', cursive;
 }
 
 #contactContainer .titles {
@@ -44,6 +39,7 @@
   padding: 0;
   margin: 0 auto;
   z-index: 1;
+  margin-top: 50px;
 }
 
 #contactContainer > #info {
@@ -61,13 +57,26 @@
   margin-bottom: 10px;
 }
 
+#contactContainer #backgroundImg:before {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #0d1128;
+  top: 0;
+  left: 0;
+  opacity: 0.69;
+  z-index: 0;
+}
+
 #contactContainer > #backgroundImg {
   background-image: url("../../images/contact.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 600px;
-  height: 300px;
-  position: fixed;
+  background-size: 100% 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
   bottom: 0px;
   left: 0;
   z-index: 0;
@@ -83,6 +92,7 @@
   -ms-grid-column: 2;
   grid-area: cta;
   font-size: 1.25em;
+  margin-top: 50px;
 }
 
 #callToAction > p,
@@ -97,14 +107,13 @@
 }
 
 #callToAction #desc {
-  margin: 2vh 0;
+  margin: 2vh 0 5vh 0;
   text-align: justify;
   font-size: 1em;
 }
 
 #callToAction #inputs {
-  border: 1px solid #00c2cb;
-  padding: 0 10px 15px 10px;
+  padding-bottom: 15px;
 }
 
 #callToAction #inputs > label {
@@ -137,15 +146,15 @@
 #callToAction #inputs > button {
   height: 2.5em;
   width: 6em;
-  background-color: #00c2cb;
-  border-radius: 15%;
-  color: #0f0e0c;
+  background-color: #0f0e0c;
+  color: #f1f1f1;
   font-size: 0.8em;
+  border: 1px solid white;
 }
 
 #callToAction #inputs > button:hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   border: 1px solid #f1f1f1;
 }
 
@@ -160,7 +169,6 @@
     flex-direction: column;
     margin: 0 1em;
     padding: 0;
-    min-height: calc(100vh - 50px);
   }
   #contactContainer > #logo {
     margin: 0;
@@ -171,6 +179,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    margin-top: 0;
   }
   #contactContainer > #info {
     height: 90px;

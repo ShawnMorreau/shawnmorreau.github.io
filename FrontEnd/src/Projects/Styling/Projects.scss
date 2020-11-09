@@ -9,7 +9,7 @@ $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
 
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 
 .outerContainer:after{
   content: "";
@@ -23,14 +23,16 @@ $blue-logo-color: #00c2cb;
   z-index:0;
 }
 .outerContainer {
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
+  padding-bottom: 5px;
   background-image: url("../../images/test.png");
   background-size: 100% 100%;
   object-fit: cover;
   width: 100%;
   position: relative;
+  z-index:0;
   .content {
-    font-family: "Courier Prime", monospace;
+    font-family: 'Indie Flower', cursive;
   }
   .titles {
     font-family: "Playfair Display", serif;
@@ -38,6 +40,7 @@ $blue-logo-color: #00c2cb;
   & > .projectsContainer {
     position: relative;
     z-index:1;
+    padding-top: 50px;
     & > #title {
       color: $white-background;
       font-size: 3em;

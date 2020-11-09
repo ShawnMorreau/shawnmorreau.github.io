@@ -5,7 +5,6 @@ window.addEventListener("load", () => {
     "Front End Developer",
     "Back End Developer",
     "Gym Enthusiast",
-    "Jaymee's Lover",
   ];
   let index = 0;
   let wordIndex = 0;
@@ -40,7 +39,7 @@ window.addEventListener("load", () => {
     }
     screen.textContent = letter;
 
-    setTimeout(type, 300);
+    setTimeout(type, 200);
   }
   })();
 });
