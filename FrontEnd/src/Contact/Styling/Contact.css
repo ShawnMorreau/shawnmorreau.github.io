@@ -24,7 +24,7 @@
 }
 
 #contactContainer .content {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #contactContainer .titles {
@@ -65,7 +65,7 @@
   background-color: #0d1128;
   top: 0;
   left: 0;
-  opacity: 0.69;
+  opacity: 0.87;
   z-index: 0;
 }
 

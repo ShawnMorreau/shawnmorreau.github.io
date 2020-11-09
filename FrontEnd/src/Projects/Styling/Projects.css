@@ -4,7 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 .outerContainer:after {
   content: "";
   width: 100%;
@@ -30,7 +29,7 @@
 }
 
 .outerContainer .content {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .outerContainer .titles {
@@ -45,8 +44,8 @@
 
 .outerContainer > .projectsContainer > #title {
   color: #f1f1f1;
-  font-size: 3em;
   margin-bottom: 0.5em;
+  font-size: 4em;
 }
 
 .outerContainer > .projectsContainer > .activeProject {

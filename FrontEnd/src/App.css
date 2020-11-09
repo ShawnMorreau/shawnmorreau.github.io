@@ -4,7 +4,7 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display:wght@700&display=swap");
 .App {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(2,10,30)),to(rgb(31, 0, 145)));

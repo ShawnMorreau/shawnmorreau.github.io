@@ -29,7 +29,7 @@ $blue-logo-color: #00c2cb;
   -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   .content {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Noto Sans', sans-serif;
   }
   .titles {
     font-family: "Playfair Display", serif;
@@ -65,7 +65,7 @@ $blue-logo-color: #00c2cb;
     background-color: rgb(13,17,40);
     top: 0;
     left: 0;
-    opacity: 0.69;
+    opacity: 0.87;
     z-index: 0;
   }
   & > #backgroundImg {

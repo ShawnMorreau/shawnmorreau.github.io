@@ -4,7 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 .navBar {
   position: absolute;
   top: 0;
@@ -15,7 +14,7 @@
 }
 
 .navBar .content {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .navBar .titles {

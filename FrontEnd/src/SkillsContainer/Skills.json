@@ -34,9 +34,6 @@
                 {"name":"Node.js"},
                 {"name":"Travis CI"}
             ]
-        },
-        {
-            "Degree":[{"name": "Carleton University - Bachelor's of Engineering(Software Stream)"}]
         }
     ]   
 }

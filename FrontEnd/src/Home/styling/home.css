@@ -4,7 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
 .home:before {
   content: "";
   min-width: 100%;
@@ -27,7 +26,7 @@
 }
 
 .home .content {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .home .titles {

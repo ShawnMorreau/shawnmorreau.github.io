@@ -8,9 +8,6 @@
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
-
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
-
 .outerContainer:after{
   content: "";
   width: 100%;
@@ -32,7 +29,7 @@ $blue-logo-color: #00c2cb;
   position: relative;
   z-index:0;
   .content {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Noto Sans', sans-serif;
   }
   .titles {
     font-family: "Playfair Display", serif;
@@ -43,8 +40,8 @@ $blue-logo-color: #00c2cb;
     padding-top: 50px;
     & > #title {
       color: $white-background;
-      font-size: 3em;
       margin-bottom: 0.5em;
+      font-size: 4em;
     }
     & > .activeProject {
       border: 1px solid $white-background;

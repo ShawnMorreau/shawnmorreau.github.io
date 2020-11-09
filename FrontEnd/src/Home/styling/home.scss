@@ -8,8 +8,6 @@
 $black-text: #0f0e0c;
 $white-background: #f1f1f1;
 $blue-logo-color: #00c2cb;
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&display=swap");
-
 .home:before {
   content: "";
   min-width: 100%;
@@ -29,7 +27,7 @@ $blue-logo-color: #00c2cb;
   overflow: hidden;
   position: relative;
   .content {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Noto Sans', sans-serif;
   }
   .titles {
     font-family: "Playfair Display", serif;
