@@ -3,6 +3,7 @@ import "../Styling/Projects.css";
 import Projects from "../Projects.json";
 import Project from "../Project/Project";
 import ProjectSpread from "../ProjectSpread/ProjectSpread";
+
 const ProjectsContainer = () => {
   let [activeProject, setActiveProject] = useState(0);
   let mappedProjects = Projects.projects.map((project, i) => (
@@ -10,6 +11,7 @@ const ProjectsContainer = () => {
       title={project.title}
       desc={project.desc}
       skills={project.skills}
+      link={project.link}
       key={i + "-key"}
     />
   ));

@@ -8,7 +8,8 @@
           "Client/Server architecture",
           "Collaboration with two group members",
           "Local Network file transfers"
-        ]
+        ],
+        "link":"https://github.com/ShawnMorreau/TFTP"
       },
       {
         "title": "Email Signature",
@@ -17,7 +18,8 @@
           "HTML5",
           "CSS/SCSS",
           "Client Collaboration"
-        ]
+        ],
+        "link":"https://github.com/ShawnMorreau/EmailSignature"
       },
       {
         "title": "Message Board",
@@ -32,7 +34,8 @@
           "REST API",
           "Authentication/Authorization with JWT",
           "CI with Travis CI"
-        ]
+        ],
+        "link":"https://github.com/ShawnMorreau/full-stack-message-board"
       },
       {
         "title": "Project Management System",
@@ -43,7 +46,8 @@
           "CSS",
           "Travis CI",
           "Replicating Agile Practices"
-        ]
+        ],
+        "link":"https://github.com/ShawnMorreau/_4thYearPMS"
       },
       {
         "title": "JavaScript Calculator",
@@ -53,7 +57,8 @@
           "JS/ES6",
           "Webpack",
           "CSS/Grid/Flexbox"
-        ]
+        ],
+        "link":"https://github.com/ShawnMorreau/theOdinProject/tree/master/calculator"
       }
     ]
   }

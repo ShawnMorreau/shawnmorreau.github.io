@@ -38,7 +38,7 @@ $blue-logo-color: #00c2cb;
     text-shadow: -2px 2px 4px $black-text;
   }
   & > .title {
-    padding-top: 50px;
+    padding-top: 10vh;
   }
   & > .skillGrouping {
     display: -webkit-box;
@@ -51,16 +51,19 @@ $blue-logo-color: #00c2cb;
     justify-content: space-evenly;
     margin-top: auto;
     position: relative;
+    margin-top: 5vh;
     & > .skillList {
       list-style: none;
       width: -webkit-fit-content;
       width: -moz-fit-content;
       width: fit-content;
-      margin: 7px 10px;
+      margin: 15px 10px;
       font-size: 1.3em;
       position: relative;
       z-index: 1;
-      
+      flex: 1 1 40%;
+
+
       & > .skill {
         color: $blue-logo-color;
         font-weight: 600;
@@ -72,6 +75,10 @@ $blue-logo-color: #00c2cb;
     }
   }
   & > #bottom_images {
+    position: absolute;
+    bottom: 5px;
+    left:0;
+    width: 100%;
     & > #logos {
       margin: 10px 0;
 
@@ -83,7 +90,7 @@ $blue-logo-color: #00c2cb;
       -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
       font-size: 1.5em;
-      position: relative;
+      
     }
   }
 }

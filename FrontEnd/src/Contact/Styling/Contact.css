@@ -12,6 +12,7 @@
 
 #contactContainer {
   min-height: 100vh;
+  max-width: 100vw;
   padding: 5% 0;
   overflow: hidden;
   display: -ms-grid;
@@ -21,6 +22,7 @@
   grid-template-rows: 2fr 1fr;
   -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
 }
 
 #contactContainer .content {
@@ -72,12 +74,12 @@
 #contactContainer > #backgroundImg {
   background-image: url("../../images/contact.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-size: 100% 100%;
-  min-width: 100%;
-  min-height: 100vh;
+  min-width: 100vw;
+  min-height: 100%;
   position: absolute;
-  bottom: 0px;
+  top: 0;
   left: 0;
   z-index: 0;
 }
@@ -167,7 +169,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 0 1em;
     padding: 0;
   }
   #contactContainer > #logo {

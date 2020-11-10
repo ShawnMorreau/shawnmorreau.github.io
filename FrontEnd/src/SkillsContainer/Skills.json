@@ -11,6 +11,7 @@
         {
             "Frameworks/Libraries":[
                 {"name":"React"},
+                {"name":"Rails"},
                 {"name":"Spring"}
             ]
         },
@@ -27,12 +28,16 @@
             ]
         },
         {
+          "Version Control/CI":[
+            {"name":"Travis CI"},
+            {"name":"Git"}
+          ]  
+        },
+        {
             "Other":[
                 {"name":"HTML5"},
                 {"name":"CSS/SCSS"},
-                {"name":"Git"},
-                {"name":"Node.js"},
-                {"name":"Travis CI"}
+                {"name":"Node.js"}
             ]
         }
     ]   

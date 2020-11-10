@@ -17,6 +17,7 @@ $blue-logo-color: #00c2cb;
 
 #contactContainer {
   min-height: 100vh;
+  max-width: 100vw;
   padding: 5% 0;
   overflow: hidden;
   display: -ms-grid;
@@ -28,6 +29,8 @@ $blue-logo-color: #00c2cb;
   grid-template-rows: 2fr 1fr;
   -ms-grid-columns: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
+
   .content {
     font-family: 'Noto Sans', sans-serif;
   }
@@ -35,8 +38,6 @@ $blue-logo-color: #00c2cb;
     font-family: "Playfair Display", serif;
   }
   & > .logo {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: logo;
     max-width: 175px;
     padding: 0;
@@ -45,8 +46,6 @@ $blue-logo-color: #00c2cb;
     margin-top: 50px;
   }
   & > #info {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
     height: 150px;
     color: $white-background;
     text-align: left;
@@ -71,21 +70,19 @@ $blue-logo-color: #00c2cb;
   & > #backgroundImg {
     background-image: url("../../images/contact.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-size: 100% 100%;
-    min-width:100%;
-    min-height: 100vh;
+    min-width: 100vw;
+    min-height: 100%;
     position: absolute;
-    bottom: 0px;
+    top: 0;
     left: 0;
     z-index: 0;
   }
 }
 
 #callToAction {
-  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   z-index: 1;
   margin: 0 auto;
   padding: 0;
@@ -164,7 +161,6 @@ $blue-logo-color: #00c2cb;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 0 1em;
     padding: 0;
     & > #logo {
       margin: 0;
