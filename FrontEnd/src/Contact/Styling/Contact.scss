@@ -94,9 +94,8 @@ $blue-logo-color: #00c2cb;
   & > p,
   h1,
   label {
-    color: #fff;
+    color: $white-background;
   }
-
   hr {
     width: 75%;
     margin: 0 auto;
@@ -162,6 +161,7 @@ $blue-logo-color: #00c2cb;
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
+    
     & > #logo {
       margin: 0;
       padding: 0;
@@ -172,6 +172,9 @@ $blue-logo-color: #00c2cb;
       -ms-flex: 1;
       flex: 1;
       margin-top: 0;
+      &>h1{
+        font-size: 1.9em;
+      }
     }
     & > #info {
       height: 90px;

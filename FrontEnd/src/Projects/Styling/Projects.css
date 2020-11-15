@@ -62,8 +62,6 @@
 
 .outerContainer > .projectsContainer > .activeProject > .project > #title {
   display: block;
-  -webkit-box-shadow: -5px 5px 1px #fa2cca;
-  box-shadow: -5px 5px 1px #fa2cca;
   color: #0f0e0c;
   background-color: #f1f1f1;
   font-size: 1.5em;

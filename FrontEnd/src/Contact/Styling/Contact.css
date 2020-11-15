@@ -100,7 +100,7 @@
 #callToAction > p,
 #callToAction h1,
 #callToAction label {
-  color: #fff;
+  color: #f1f1f1;
 }
 
 #callToAction hr {
@@ -181,6 +181,9 @@
     -ms-flex: 1;
     flex: 1;
     margin-top: 0;
+  }
+  #contactContainer > #callToAction > h1 {
+    font-size: 1.9em;
   }
   #contactContainer > #info {
     height: 90px;
