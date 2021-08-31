@@ -1,0 +1,102 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+.skillsContainer:before {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #0d1128;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.skillsContainer {
+  z-index: 0;
+  background: #0f0e0c url("../../images/astro.png") no-repeat;
+  background-size: 100% 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 100vh;
+  color: #f1f1f1;
+  position: relative;
+  padding-bottom: 0.1em;
+}
+
+.skillsContainer .content {
+  font-family: 'Noto Sans', sans-serif;
+  text-shadow: -2px 2px 4px #0f0e0c;
+}
+
+.skillsContainer .titles {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  text-shadow: -2px 2px 4px #0f0e0c;
+}
+
+.skillsContainer > .title {
+  padding-top: 10vh;
+}
+
+.skillsContainer > .skillGrouping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-top: auto;
+  position: relative;
+  margin-top: 5vh;
+}
+
+.skillsContainer > .skillGrouping > .skillList {
+  list-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 15px 10px;
+  font-size: 1.3em;
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.skillsContainer > .skillGrouping > .skillList > .skill {
+  color: #00c2cb;
+  font-weight: 600;
+  font-size: 0.9em;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2px;
+}
+
+.skillsContainer > #bottom_images {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+}
+
+.skillsContainer > #bottom_images > #logos {
+  margin: 10px 0;
+  color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=Skills.css.map */

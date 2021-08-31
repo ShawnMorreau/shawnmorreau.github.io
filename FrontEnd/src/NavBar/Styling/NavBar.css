@@ -1,0 +1,99 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+.navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+
+.navBar .content {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.navBar .titles {
+  font-family: "Playfair Display", serif;
+}
+
+.navBar > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.navBar > ul > #homeLI {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
+
+.navBar > ul > #homeLI #home #logo {
+  width: 50px;
+}
+
+.navBar > ul > #homeLI #home #logo:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.navBar > ul > .links {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.navBar > ul > .links > li:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.navBar > ul > .links > li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar > ul > .links {
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .navBar > ul > .links {
+    padding: 0;
+    margin: 0;
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */

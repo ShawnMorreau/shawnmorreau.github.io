@@ -1,0 +1,17 @@
+#socials {
+  display: flex;
+  & > li {
+    & > a {
+      & > .socialIcon {
+        font-size: 2em;
+        margin-right: 10px;
+        color: #f1f1f1;
+      }
+      &>.socialIcon:hover{
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+      }
+    }
+  }
+}

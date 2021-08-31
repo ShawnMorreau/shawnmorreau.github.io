@@ -1,0 +1,148 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+$black-text: #0f0e0c;
+$white-background: #f1f1f1;
+$blue-logo-color: #00c2cb;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#about:after{
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgb(13,17,40);
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+}
+#about {
+  background-image: url("../../images/glass.png");
+  width: 100%;
+  min-height: 100vh;
+  display: flex column;
+  font-size: 1.5em;
+  position: relative;
+  z-index:1;
+  padding:50px 0;
+  z-index:0;
+  
+  .header {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+  }
+  .content {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5em;
+  }
+  & > #title {
+    color: $white-background;
+    text-shadow: 2px 2px 5px $black-text;
+    margin:0;
+    padding:0;
+    z-index:1;
+    position: relative;
+  }
+
+  & > #images {
+    & > #me {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      object-position: 60%;
+      padding: 0;
+      margin-top: -20px;
+      margin-bottom: 10px;
+      position: relative;
+      z-index:1;
+      
+    }
+  }
+  & > #details {
+    color: $white-background;
+    margin: 0 1em;
+    text-align: left;
+    -webkit-box-flex: 1 100%;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+    padding-bottom: 2em;
+    position: relative;
+    z-index:1;
+    text-align: justify;
+
+
+    & > #desc {
+      & > #laptop {
+        display: block;
+        margin: 20px 50%;
+        font-size: 1.1em;
+        display:none;
+      }
+    }
+    & > #selfLearning {
+      & > #code {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  #about {
+    display: flex column;
+    min-height:100vh;
+    .content {
+      font-size: 0.86em;
+      
+    }
+    & > #title {
+      text-align: left;
+      margin-left: 24px;
+      z-index:1;
+      margin-bottom: 0.6em;
+    }
+    & > #details {
+      width: 70vw;
+      & > #desc {
+        & > #laptop {
+          font-size: 2em;
+          margin: 35px 35vw;
+          display:none;
+        }
+      }
+    }
+
+    & > #images {
+      & > #me {
+        float: right;
+        width: 25vw;
+        height: 400px;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $blue-logo-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00c290;
+}

@@ -1,0 +1,114 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+$black-text: #0f0e0c;
+$white-background: #f1f1f1;
+$blue-logo-color: #00c2cb;
+.home:before {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgb(13,17,40);
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index:0;
+}
+.home {
+  background-image: url(../../images/backgroundv2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  .content {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .titles {
+    font-family: "Playfair Display", serif;
+  }
+  & > #homepage {
+    margin-top: 25vh;
+    & > #name {
+      color: $white-background;
+      text-shadow: 2px 2px 2px $black-text;
+      width: 100%;
+      position: relative;
+    }
+    & > .role {
+      color: $white-background;
+      text-shadow: 1px 1px $black-text;
+      position:relative;
+    }
+    & > .role:after{
+      content:"";
+      height: 100%;
+      width: 1px;
+      border-right: 2px solid $white-background;
+      margin-left: 1px;
+      -webkit-animation: blink 0.4s infinite ease;
+              animation: blink 0.4s infinite ease;
+      position: relative;
+    }
+    @-webkit-keyframes blink {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+    @keyframes blink {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+    & > .callToAction {
+      color: $white-background;
+      text-shadow: 1px 1px 5px $black-text;
+      margin: 50px 10vw 0 10vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+
+      & > .text {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100vw;
+                flex: 1 1 100vw;
+        position: relative;
+      }
+      & > .CTAButton {
+        position: relative;
+        background-color: $white-background;
+        width: 150px;
+        margin-top: 1em;
+        & a {
+          text-decoration: none;
+          color: $black-text;
+        }
+      }
+      & > .CTAButton:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+    }
+  }
+}

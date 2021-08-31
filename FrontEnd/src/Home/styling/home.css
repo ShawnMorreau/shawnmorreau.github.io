@@ -1,0 +1,123 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+.home:before {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: #0d1128;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.home {
+  background-image: url(../../images/backgroundv2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .content {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.home .titles {
+  font-family: "Playfair Display", serif;
+}
+
+.home > #homepage {
+  margin-top: 25vh;
+}
+
+.home > #homepage > #name {
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #0f0e0c;
+  width: 100%;
+  position: relative;
+}
+
+.home > #homepage > .role {
+  color: #f1f1f1;
+  text-shadow: 1px 1px #0f0e0c;
+  position: relative;
+}
+
+.home > #homepage > .role:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  border-right: 2px solid #f1f1f1;
+  margin-left: 1px;
+  -webkit-animation: blink 0.4s infinite ease;
+  animation: blink 0.4s infinite ease;
+  position: relative;
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home > #homepage > .callToAction {
+  color: #f1f1f1;
+  text-shadow: 1px 1px 5px #0f0e0c;
+  margin: 50px 10vw 0 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.home > #homepage > .callToAction > .text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100vw;
+  flex: 1 1 100vw;
+  position: relative;
+}
+
+.home > #homepage > .callToAction > .CTAButton {
+  position: relative;
+  background-color: #f1f1f1;
+  width: 150px;
+  margin-top: 1em;
+}
+
+.home > #homepage > .callToAction > .CTAButton a {
+  text-decoration: none;
+  color: #0f0e0c;
+}
+
+.home > #homepage > .callToAction > .CTAButton:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=home.css.map */
