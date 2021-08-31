@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import ProjectsContainer from "../Projects/ProjectContainer/ProjectsContainer";
 import SkillsContainer from "../SkillsContainer/SkillsContainer";
+// import SkillsContainer from "../SkillsContainerV2/SkillsContainer";
 import About from "../About/About";
 import Home from "../Home/Home";
 

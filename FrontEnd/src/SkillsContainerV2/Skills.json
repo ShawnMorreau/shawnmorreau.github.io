@@ -1,0 +1,44 @@
+{
+    "skills":[
+        {
+            "Languages":[
+                {"name":"Java"},
+                {"name":"Javascript"},
+                {"name":"Python"},
+                {"name":"Ruby"}
+            ]
+        },
+        {
+            "Frameworks/Libraries":[
+                {"name":"React"},
+                {"name":"Rails"},
+                {"name":"Spring"}
+            ]
+        },
+        {
+            "Databases":[
+                {"name":"MongoDB"},
+                {"name":"SQL"}
+            ]
+        },
+        {
+            "Testing":[
+                {"name":"JUnit"},
+                {"name":"Jasmine"}
+            ]
+        },
+        {
+          "Version Control/CI":[
+            {"name":"Travis CI"},
+            {"name":"Git"}
+          ]  
+        },
+        {
+            "Other":[
+                {"name":"HTML5"},
+                {"name":"CSS/SCSS"},
+                {"name":"Node.js"}
+            ]
+        }
+    ]   
+}
