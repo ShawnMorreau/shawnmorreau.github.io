@@ -80,7 +80,7 @@ const Contact = (props) => {
         </form>
       </div>
       <div id="info" className="content">
-        <span>{phone} 1 519 466 7795</span>
+        <span>{phone} 1 519 816 4202</span>
         <br />
         <span>{mail} shawn.morreau@gmail.com</span>
         <br />
