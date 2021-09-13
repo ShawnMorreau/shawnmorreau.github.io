@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const baseUrl = "http://api.weatherstack.com/";
+const baseUrl = "https://api.weatherstack.com/";
 const query = "Melbourne";
 //This should be in my .env file... but it's fine since I'm never using it again
 const apiKey = "b57105cc8053bc35407f0bc4a04597f8";
