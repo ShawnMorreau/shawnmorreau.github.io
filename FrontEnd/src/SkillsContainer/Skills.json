@@ -3,15 +3,12 @@
         {
             "Languages":[
                 {"name":"Java"},
-                {"name":"Javascript"},
-                {"name":"Python"},
-                {"name":"Ruby"}
+                {"name":"Javascript"}
             ]
         },
         {
             "Frameworks/Libraries":[
                 {"name":"React"},
-                {"name":"Rails"},
                 {"name":"Spring"}
             ]
         },
