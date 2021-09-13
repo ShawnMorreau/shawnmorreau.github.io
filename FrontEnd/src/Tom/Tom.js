@@ -73,7 +73,7 @@ const Tom = () => {
             Github
           </a>
         </p>
-        <p class="vidExamplesCaption">
+        <p className="vidExamplesCaption">
           This is a very barebones app that I made to mimic a card game called
           "Red Flags". My partner was very intrigued in trying it but the game
           was sold out so I made this. Got it to a working state with some bugs
