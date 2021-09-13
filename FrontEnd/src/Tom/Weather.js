@@ -19,7 +19,7 @@ const Weather = () => {
       <p id="troll">
         And since you love weather apps... the weather in Melbourne is currently{" "}
         {weather}&deg;C 😊 ...Welp. I tried. I failed. Finding an api that has a
-        free tier that has a https endpoint is far to much work just to make a
+        free tier as well as a https endpoint is far to much work just to make a
         joke. The code is commented out in the{" "}
         <a
           href="https://github.com/ShawnMorreau/shawnmorreau.github.io/blob/fullstacktogether/FrontEnd/src/Tom/Weather.js"
