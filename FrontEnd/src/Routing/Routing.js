@@ -6,7 +6,6 @@ import SkillsContainer from "../SkillsContainer/SkillsContainer";
 // import SkillsContainer from "../SkillsContainerV2/SkillsContainer";
 import About from "../About/About";
 import Home from "../Home/Home";
-import Tom from "../Tom/Tom"
 
 export default function Routing() {
   return (
@@ -17,7 +16,6 @@ export default function Routing() {
         <Route exact path="/skills" component={SkillsContainer}/>
         <Route exact path="/project" component={ProjectsContainer} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/tom" component={Tom}/>
       </Switch>
     </div>
   );

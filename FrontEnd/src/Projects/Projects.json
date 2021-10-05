@@ -50,15 +50,16 @@
         "link":"https://github.com/ShawnMorreau/_4thYearPMS"
       },
       {
-        "title": "JavaScript Calculator",
-        "desc": "I created a calculator using JavaScript to manipulate the DOM which consisted of adding the many buttons and their repective event listeners. I also performed the calculations using closures in order to allow for chaining and styling was done with SCSS.",
+        "title": "No Shot Card Game",
+        "desc": "First project created in Go. Created based off of 'Red Flags', a card game in which you create an ideal date and someone trys to ruin the date with a flaw. Initally created poorly, and wasn't testable, then I refactored the code and used TDD as much as possible to recreate this project with solid unit tests.",
         "skills": [
-          "Jasmine testing",
-          "JS/ES6",
-          "Webpack",
-          "CSS/Grid/Flexbox"
+          "TDD",
+          "Golang",
+          "React",
+          "Concurrency",
+          "Websockets"
         ],
-        "link":"https://github.com/ShawnMorreau/theOdinProject/tree/master/calculator"
+        "link":"https://github.com/ShawnMorreau/noshotv2-backend"
       }
     ]
   }
