@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc5afcc9.chunk.css",
-    "main.js": "/static/js/main.6706a459.chunk.js",
-    "main.js.map": "/static/js/main.6706a459.chunk.js.map",
+    "main.css": "/static/css/main.516ce1bb.chunk.css",
+    "main.js": "/static/js/main.23145de8.chunk.js",
+    "main.js.map": "/static/js/main.23145de8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.f0695dca.chunk.js": "/static/js/2.f0695dca.chunk.js",
-    "static/js/2.f0695dca.chunk.js.map": "/static/js/2.f0695dca.chunk.js.map",
+    "static/js/2.35036328.chunk.js": "/static/js/2.35036328.chunk.js",
+    "static/js/2.35036328.chunk.js.map": "/static/js/2.35036328.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.796e8abefafa4e79ed211833c44ca9ef.js": "/precache-manifest.796e8abefafa4e79ed211833c44ca9ef.js",
+    "precache-manifest.275d141983a0fa81d07417d986d63a6a.js": "/precache-manifest.275d141983a0fa81d07417d986d63a6a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fc5afcc9.chunk.css.map": "/static/css/main.fc5afcc9.chunk.css.map",
-    "static/js/2.f0695dca.chunk.js.LICENSE.txt": "/static/js/2.f0695dca.chunk.js.LICENSE.txt",
-    "static/media/home.css": "/static/media/backgroundv2.9a6b2e8d.jpg",
-    "static/media/Contact.css": "/static/media/contact.2d0582c0.png",
+    "static/css/main.516ce1bb.chunk.css.map": "/static/css/main.516ce1bb.chunk.css.map",
+    "static/js/2.35036328.chunk.js.LICENSE.txt": "/static/js/2.35036328.chunk.js.LICENSE.txt",
+    "static/media/Projects.css": "/static/media/tftp2.c4b08193.png",
+    "static/media/Home.css": "/static/media/ProximaNova-Regular.410504d4.otf",
     "static/media/filledLogo.svg": "/static/media/filledLogo.9231c9a4.svg",
-    "static/media/about.css": "/static/media/glass.04b1ab10.png",
     "static/media/logo.png": "/static/media/logo.b0f6823f.png",
-    "static/media/m4-nobg.png": "/static/media/m4-nobg.dfdec1bd.png",
-    "static/media/Projects.css": "/static/media/test.bf37aa6e.png"
+    "static/media/shawnPic.png": "/static/media/shawnPic.163f707a.png",
+    "static/media/triangles.svg": "/static/media/triangles.af6c3f3e.svg",
+    "static/media/weights bike doggo.svg": "/static/media/weights bike doggo.f5801197.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/js/2.f0695dca.chunk.js",
-    "static/css/main.fc5afcc9.chunk.css",
-    "static/js/main.6706a459.chunk.js"
+    "static/js/2.35036328.chunk.js",
+    "static/css/main.516ce1bb.chunk.css",
+    "static/js/main.23145de8.chunk.js"
   ]
 }
